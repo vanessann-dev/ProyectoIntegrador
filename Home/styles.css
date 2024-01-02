@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope&display=swap");
+
+:root{
+    --tipogrfia-body: 'Cormorant',
+       sans-serif;
+    --tamano-fuente: 16px
+    --primary-color:
+    --secundary-color:
+    --third-color:
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--tipogrfia-body);
+    padding: 15px 10px 25px 10px;
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+} 
+
+/* Selector de tipo: nombre de una etiqueta -- Selector universal: * (todos los elementos del documento HTML) -- Selector de clases: .(Segudo del nombre de la clase) --- Selector de ID: #(Seguido del nombre del ID) */
+
+header{
+    background-color: #093931;
+    color: #F5D38E;
+}
+
+.lista li{
+    color: #FFFFFF;
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    color: #F5D38E;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.header-top h2{
+    width: 95px;
+    height: 46px;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.titles .title h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 72;
+    line-height: 94;
+    color: #F5D38E;
+    width: 537px;
+    height: 282px;
+    top: 232px;
+    left: 132px;
+
+}
+
+.titles .titulo{
+    font-family: "Cormorant";
+    width: 370px;
+    height: 282px;
+    padding-top: 70px;
+    /* padding-right: 30px; */
+    padding-left: 50px;
+    font-size: 22px;
+    line-height: 94px;
+    font-weight: 400;
+
+}
+
+.nav{
+    padding-right: 100px;
+}
+
+.nav .lista ul{
+    display: flex;
+    display: inline-flex;
+    list-style: none;   
+}
+
+.nav .lista ul li{
+    padding: 20px;
+}
+
+.nav .lista ul li:hover{
+    /* background-color: transparent; */
+    /* border: 1px solid var(--secundary-color); */
+    color: #F2C66D;
+    text-decoration: underline;
+
+}
+.imagenes2{
+    padding-left: 220px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.header-image-bottom {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    /* padding-right: 30px; */
+    margin-top: 90px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.tittle{
+    padding-left: 45px;
+    
+}
+
+.titles button {
+    font-family: "Manrope";
+    width: 200px;
+    height: 52px;
+    /* padding: 12px, 59px, 12px, 59px; */
+    border-radius: 26px;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style:groove;
+    color: white;
+}
+
+
+.encabezado {
+    background-image: url(../Assets/fondo.png)
+}
+
+.imagenes .imagen2 {
+    height: 321px;
+    width: 241px;
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    border-radius: 121px, 121px, 0px, 0px;
+}
+
+.imagenes .imagen1{
+    height: 543px;
+    width: 407px;
+    /* top: 139px;
+    left: 741px; */
+    border-radius: 8px;
+}
+
+.servicios{
+    padding: 30px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.servicios img{
+    align-self: center;
+    width: 62px;
+    height: 62px;
+    top: 36px;
+    left: 287px;
+}
+
+.servicios .logos{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.servicios h2{
+    padding: 10px;
+    align-self: center;
+}
+
+.servicios p{
+    text-align: center;
+}
+
+
+.productos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos h2, p{
+    padding: 10px;
+}
+
+
+.comprar {
+    display: flex;
+    flex-direction: column;
+}
+
+.comprar button{
+    border-radius: 25px;
+    height: 30px;
+    width: 80px;
+    align-self: center;
+}
+
+.historia{
+    display: flex;
+    justify-content: center;
+}
+
+
+.historial{
+    display: flex;
+    justify-content: center;
+}
