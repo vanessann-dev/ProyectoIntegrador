@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope&display=swap");
 
 :root{
-    --tipogrfia-body: 'Cormorant',
+    --tipogrfia-body: 'Cormorant garamond',
        sans-serif;
     --tamano-fuente: 16px
     --primary-color:
@@ -32,16 +32,18 @@ header{
 .lista li{
     color: #FFFFFF;
     font-family: "Manrope";
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 22px;
+    width: 40px;
+    height: 22px;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
     color: #F5D38E;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant garamond';
     font-weight: 400;
     font-size: 30px;
     line-height: 46px;
@@ -51,12 +53,12 @@ header{
     width: 95px;
     height: 46px;
     font-size: 30px;
-    padding-left: 100px;
+    padding-left: 110px;
     padding-top: 10px;
 }
 
 .titles .title h2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Cormorant garamond";
     font-weight: 400;
     font-size: 72;
     line-height: 94;
@@ -69,13 +71,13 @@ header{
 }
 
 .titles .titulo{
-    font-family: "Cormorant";
-    width: 370px;
+    font-family: "Cormorant garamond";
+    width: 450px;
     height: 282px;
-    padding-top: 70px;
+    padding-top: 20px;
     /* padding-right: 30px; */
-    padding-left: 50px;
-    font-size: 22px;
+    padding-left: 61px;
+    font-size: 41px;
     line-height: 94px;
     font-weight: 400;
 
@@ -102,8 +104,32 @@ header{
     text-decoration: underline;
 
 }
+/* 
+.linea {
+    border: none;
+    border-top: 1px solid yellow;
+    margin: 5px 0;
+}
+
+.contenedor hr{
+    transition: tranform 0.3s ease;
+}
+
+.contenedor:hover .linea {
+    transform: translateY(5px);
+}
+
+.linea {
+    transition: trasnform 0.3s ease-in;
+}
+
+.linea:hover{
+ transform: translateX(0.6s) (5px);
+} */
+
+
 .imagenes2{
-    padding-left: 220px;
+    padding-left: 244px;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -125,14 +151,14 @@ header{
 }
 
 .tittle{
-    padding-left: 45px;
+    padding-left: 66px;
     
 }
 
 .titles button {
     font-family: "Manrope";
-    width: 200px;
-    height: 52px;
+    width: 150px;
+    height: 40px;
     /* padding: 12px, 59px, 12px, 59px; */
     border-radius: 26px;
     border: 1px;
@@ -140,6 +166,7 @@ header{
     background-color: transparent;
     border-style:groove;
     color: white;
+    font-size: 18px;
 }
 
 
@@ -152,7 +179,7 @@ header{
     width: 241px;
     position: absolute;
     top: 250px;
-    left: 1000px;
+    left: 1100px;
     border-radius: 121px, 121px, 0px, 0px;
 }
 
@@ -167,7 +194,10 @@ header{
 .servicios{
     padding: 30px;
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;padding-right: 50px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 55px;
 }
 
 .servicios img{
@@ -187,16 +217,28 @@ header{
 .servicios h2{
     padding: 10px;
     align-self: center;
+    padding-bottom: 0px;
 }
 
 .servicios p{
     text-align: center;
+    font-weight: 400;
+    font-family: "manrope";
+    font-size: 16px;
+    line-height: 26px;
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    padding-top: 0px;
 }
 
 
 .productos{
     display: flex;
     justify-content: space-between;
+    padding-top: 75px;
+
 }
 
 .productos h2, p{
@@ -204,25 +246,97 @@ header{
 }
 
 
+.productos h2{
+    font-family: "cormorant garamond";
+    color: #171A1F;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    Width:180px;
+    Height:36px;
+    padding-bottom: 0%;
+}
+
+
+.productos p{
+    padding-top: 0%;
+    font-family: "manrope";
+    color: #171A1F;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    Width: 57px;
+    Height:26px;
+}
+
 .comprar {
     display: flex;
     flex-direction: column;
 }
 
-.comprar button{
-    border-radius: 25px;
-    height: 30px;
-    width: 80px;
-    align-self: center;
+.comprar h2{
+    padding-left: 100px;
+    font-family: "Cormorant Garamond";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #0D554A;
+    width: 264px;
+    height: 112px;
 }
 
-.historia{
+.comprar p{
+    color: #9095A0;
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 100px;
+    width: 264px;
+    height: 78px;
+}
+
+.comprar button{
+    border-radius: 26px;
+    height: 52px;
+    width: 200px;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    font-size: 18px;
+}
+    
+.comprar img{
+    border-radius: 8px;
+}
+
+.boton{ padding-left: 100px;}
+
+.historia h2{
     display: flex;
     justify-content: center;
+    font-family: "cormorant garamond";
+    font-weight: 600;
+    font-size: 40px;
+    color: #0D554A;
+    line-height: 56px;
+    align-items: center;
+    height: 56px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 
 .historial{
     display: flex;
     justify-content: center;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    width: 1230px;
+    height: 390px;
+    border-radius: 8px;
 }
