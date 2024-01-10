@@ -1,6 +1,4 @@
-footer{
-    background-color: #093931;  
-}
+/*Estilos Generales*/
 
 .fuente1{
     font-family: 'Cormorant Garamond', sans-serif;
@@ -18,41 +16,189 @@ footer{
     color:#F5D38E;
 }
 
-.iconos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+.txtG{
+    color:#0D554A;
 }
 
-.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.icon img {
-    width: 100px;
-    height: 100px;
-}
-
-.icon p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+/*Estilos sección Our Collections*/
+  .colecciones{
+    justify-content: center;
     text-align: center;
+  }
+
+  .colecciones-img{
+    width: 360px;
+    height: 360px;
+    padding: 2.1%;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
 }
 
-.button{
-    border-radius: 26px;
-    background-color: #FFFFFF;
-    color: #0D554A;
-    padding: 15px 32px; 
-    text-align: center; 
-    text-decoration: none; 
-    font-size: 18px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
+    .column {
+        flex: 20%;
+        padding: 1px;
+       
+    }
     
+    .column img {
+        width: 360px;
+        height: 360px;
+        top: 186px;
+        left: 132px;
+    }
+    
+    .margen2{
+        margin-left: 40px;
+        margin-right: 53px;
+    }
+    
+    .margen5{
+        margin-left: 48px;
+        margin-right: 53px;
+    }
+    
+    .buttoncolec{
+        border-radius: 26px;
+        background-color: #FFFFFF;
+        color: #0D554A;
+        padding: 15px 32px; 
+        text-align:center; 
+        text-decoration: none; 
+        font-size: 18px; 
+        margin: 4px 2px; 
+        cursor: pointer; 
+    }
+
+/*Estilos sección From People*/
+.from-people{
+    background-color: #093931;  
+}
+
+.texto-people{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.target-container{
+  background-color: #171A1F4D;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  width: 696px;
+  height: 375px;
+  top: 72px;
+  left: 612px;
+  border-radius: 8px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10%;
+
+}
+
+.button-people{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    padding-right: 10%;
+}
+
+
+/*Estilos sección Footer*/ 
+
+.contenido-footer{
+    display: flex;
+    align-items: flex-start;
+}
+
+footer{
+    background-color: #093931;  
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+
+.part1{
+    margin-left: 132px;
+    margin-top: 48px;
+}
+
+.part2{
+    margin-left: 206px;
+    margin-top: 48px;
+}
+
+.part3{
+    margin-top: 48px;
+    margin-left: 94px;
+    margin-right: 269px;
+}
+
+.part4{
+    margin-top: 44px;
+    margin-right: 132px;
+    flex-direction: row;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+}
+
+.busqueda-estilo{
+    display: inline-flex;
+    padding: 10px, 132px, 9px, 38px;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px, 0px, 38px;
+    border: 1px; 
+}
+
+.part4 .busqueda-estilo::placeholder{
+    color: #FFF;
+    font-family: 'Manrope Light', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.img-busqueda{
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.part4 button{
+    padding: 10px;
+    justify-content: right;
+    align-items: right;
+    border-radius:0px, 18px, 18px, 0px;
+    background:#F2C66D;
+    position: absolute;
+    margin-left: 242px;
+    font-weight: 400;
+    line-height: 22px;
+    outline: none;
+    border:none;
+    margin-left: 272px;
+}
+
+
+.redessociales{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    gap: 10px;  
 }

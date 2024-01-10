@@ -4,55 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope:wght@200&display=swap');
+    </style>
     <title>Darling Jewelry</title>
 </head>
 <body>
-    <header >
-        <h1>Darling</h1>
-        <section>
-            
-        </section>
-        <nav>
-             <ul>
-                <span>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Collections</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </span>
-             </ul>
-        </nav>
-    </header>
-
-    <div class="iconos">
+   
+    <!--
+      <div class="iconos">
         <div class="icon">
           <img src="../Assets/icono1.png" alt="Icono 1">
-          <p>Delivery</p>
-          <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+          <p class="fuente1">Delivery</p>
+          <p class="fuente2">Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
         </div>
         <div class="icon">
           <img src="../Assets/icono2.png" alt="Icono 2">
-          <p>Customer care</p>
-          <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+          <p class="fuente1">Customer care</p>
+          <p class="fuente2">Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
         </div>
         <div class="icon">
           <img src="../Assets/icono3.png" alt="Icono 3">
-          <p>Payment security</p>
-          <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+          <p class="fuente1">Payment security</p>
+          <p class="fuente2">Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
         </div>
       </div>
-  
-      <div>
-        <h2>Featured Products</h2>
-        <p>Quis Lorem laborum quis esse officia ad commodo commodo anim est et nulla</p>
-        <button class="button">Shop now</button>
-      </div>
 
-       <!--Código del Footer-->
+      <section>
+        <div>
+          <h2 class="fuente1 txtG" >
+            Featured 
+            Products</h2>
+          <p class="fuente2">Quis Lorem laborum quis esse officia ad commodo 
+          commodo anim est et nulla</p>
+          <button class="buttonproduc">Shop now</button>
+        </div>
+  
+        <div class="card">
+          <img src="../Assets/card1.png" alt="Producto 1">
+          <h2>Radiance Necklace</h2>
+          <p>$168.76</p>
+        </div>
+      
+        <div class="card">
+          <img src="../Assets/card2.png" alt="Producto 2">
+          <h2>Exquisite Earrings</h2>
+          <p>$125.28</p>
+        </div>
+      
+        <div class="card">
+          <img src="../Assets/card3.png" alt="Producto 3">
+          <h2>Glamour Necklace</h2>
+          <p>$620.73</p>
+        </div>
+      </div>
+        
+      </section> -->
+
+    
     <div>
-      <footer>
-        <div class="txtF">
+      <h2 class="fuente1 txtG colecciones"  >Our Collections</h2>
+          <div class="row">
+            <div class="column">
+             <img src="../Assets/collection1.png" alt="Luxurios Lustre">
+            </div>
+            <div class="column margen2">
+             <img src="../Assets/collection2.png" alt="Radiant Reflections">
+            </div>
+            <div class="column ">
+             <img src="../Assets/collection3.png" alt="Majestic Mementos">
+            </div>
+          </div>
+  
+           <div class="row">
+           <div class="column">
+             <img src="../Assets/collection4.png" alt="Blissful Baubles">
+            </div>
+      <div class="column margen5">
+        <img src="../Assets/collection5.png" alt="Timeless Treasures">
+      </div>
+      <div class="column">
+        <img src="../Assets/collection6.png" alt="Divine Diamonds">
+      </div>
+    </div>
+
+    <button class="buttoncolec">Shop now</button>
+
+    <!--Sección FROM PEOPLE-->
+
+    <div class="from-people">
+     
+        <div class="texto-people txtF">
           <h2 class="fuente1" >From de People</h2>
           <p class="fuente2">
             We love hearing from our customers! You’re the reason we’re here and
@@ -65,8 +107,7 @@
             <div class=".target-container img ">
                 <img src="../Assets/img_footer.png" alt="Imagen Footer" />
             </div>
-            
-
+          </a>
             <div class="fuente2 txtF">
                 <p>
                     The ring itself is stunning, with a beautiful design that catches
@@ -81,30 +122,53 @@
             
         </div>
 
-            <div>
-                <h2 class="txtD fuente1">Darling</h2>
-                <div class="fuente2 lista txtF">
-                    <ul class="palabras-lista">
-                        <li>Shop</li>
-                        <li>Collections</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Privacy</li>
-                        <li>Terms</li>
-                    </ul>
-                </div>
+        <div class="button-people">
+          <img src="../Assets/button1_footer.png" alt="1" />
+          <img src="../Assets/button2_footer.png" alt="2" />
+        </div>
+
+
+      </div>
+
+        <!--Sección FOOTER-->
+        <footer>
+
+          <div class="contenido-footer">
+            <div class="part1 fuente1 txtF">
+              <h2 class="txtD fuente1">Darling</h2>
+              <p class="brand txtF fuente2">© 2022 Brand, Inc.</p>
+            </div>
+          
+            <div class="part2 fuente1 txtF">
+              <p>Shop</p>
+              <p>Collections</p>
+              <p>About</p>
             </div>
 
-            <div class="social-icons">
+            <div class="part3 fuente1 txtF">
+              <p>Contact</p>
+              <p>Privacy</p>
+              <p>Terms</p>
+            </div>
+
+            <div class="part4">
+              <h2 class="fuente1 txtF">Subscribe to our newsletter</h2>
+              <p class="fuente1 txtF">For product announcements and exclusive insights</p>
+              <div class="busqueda"> </div>
+              <img src="../Assets/Mail.png" alt="mail" />
+              <input type="email" placeholder="Input your email">
+              <button>Subscribe</button>
+
+            </div>
+
+            <div class="redessociales">
               <img src="../Assets/logo_twitter.png" alt="Twitter" />
               <img src="../Assets/logo_fb.png" alt="Facebook" />
               <img src="../Assets/logo_link.png" alt="Linkedin" />
               <img src="../Assets/logo_youtube.png" alt="YouTube" />
             </div>
-          </a>
-       
+          </div>
       </footer>
-    </div>
-  
+
 </body>
 </html>
