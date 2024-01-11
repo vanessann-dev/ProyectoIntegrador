@@ -300,6 +300,59 @@ border-radius: 0px 0px 15px 15px;
     max-width: 100%;
     height: auto;
 }
+
+/*Sección Collection*/
+.colecciones{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.contenedorTituloColeccion{
+    color:#0D554A;
+    margin-bottom: 2rem;
+}
+
+.contenedorColumnas{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contenedorColumnas img{
+ 
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 90%;
+}
+
+.columnaLateral{
+ margin-top: 2rem;
+
+}
+
+.columnaCentral{
+
+}
+
+.buttonColec{
+    border-radius: 26px;
+    height: 3rem;
+    width: 12rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    font-size: 18px;
+}
+
+
 .historia h2{
     display: flex;
     justify-content: center;
@@ -342,64 +395,17 @@ border-radius: 0px 0px 15px 15px;
     width: 100%;
 }
 /*Estilos Generales*/
-.txtF{
-    color:#FFFFFF;
-}
-.txtD{
-    color:#F5D38E;
-}
+
 .txtG{
     color:#0D554A;
 }
-/*Estilos sección Our Collections*/
-  .colecciones{
-    justify-content: center;
-    text-align: center;
-  }
-  .colecciones-img{
-    width: 360px;
-    height: 360px;
-    padding: 2.1%;
-    padding-top: 3%;
-    padding-bottom: 1.5%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-}
-.column {
-    flex: 20%;
-    padding: 1px;
-}
-.column img {
-width: 360px;
-height: 360px;
-top: 186px;
-left: 132px;
-}
-.margen2{
-    margin-left: 40px;
-    margin-right: 53px;
-}
-.margen5{
-    margin-left: 48px;
-    margin-right: 53px;
-}
-.buttoncolec{
-    border-radius: 26px;
-    background-color: #FFFFFF;
-    color: #0D554A;
-    padding: 15px 32px;
-    text-align:center;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+
 /*Estilos sección From People*/
 .from-people{
-    background-color: blue;
+    background-color:#0D554A;
     display: flex;
     padding-top: 3rem;
-    /* background-color: #093931;   */
+    
 }
 .texto-people-txtF{
     margin-left: 10%;
@@ -441,22 +447,29 @@ left: 132px;
     margin-bottom: 3rem;
     margin-right: 10%;
     margin-left: 10rem;
-    height: 20rem;
-  background-color: red;
-  display: flex;
-  border-radius: 8px;
+    height: 30%;
+    background-color: #171A1F4D;
+    display: flex;
+    border-radius: 8px;
 }
+
+.target-container{
+
+}
+
 .target-img-container{
-    height: 20rem;
+    
     border-radius: 8px 0px 0px 8px ;
 }
 .target-parrafo{
+    /*display: flex;*/
     font-family: "manrope";
     color: #FFFFFF;
     margin-top: 3rem;
     margin-left: 2rem;
     margin-right: 20%;
-    background-color: green;
+   
+
 }
 .target-texto1{
     font-size: 0.7rem;
@@ -472,8 +485,8 @@ margin-bottom: 0.1rem;
 }
 .button-people{
     height: 3.2rem;
-    margin-top: 3.25rem;
-    margin-left: 12.5rem;
+    margin-top: 2.85rem;
+    margin-left: 10.5rem;
     z-index: 50;
     position: absolute;
     display: flex;
@@ -482,82 +495,114 @@ margin-bottom: 0.1rem;
 }
 .darling-footer{
     display: flex;
-    background-color: red;
+    background-color: #093931;
+    height: 10rem;
+ 
+
 }
 /*Estilos sección Footer*/
-.contenido-footer{
-    display: flex;
-    align-items: flex-start;
+
+.darling-title-footer{
+    margin-top: 3rem;
 }
+.darlingFooterContainer{
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.tituloDarlingFooter{
+    color: #F5D38E;
+}
+
+.navColumna1Footer{
+    margin-left: 15%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.navColumna2Footer{
+    margin-left: 5%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.subscribeAndShare{
+    margin-top: 3rem;
+    margin-left: 15%; 
+    width: 100%;
+}
+
+.tituloSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'cormorant garamond';
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.parrafoSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'manrope';
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.contenedorInputBusqueda{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputBusqueda{
+    background-image: url(../Assets/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #093931;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.inputBusqueda::placeholder{
+    color: white;
+}
+
+.botonSubscribe{
+    background: #F2C66D;
+    width: 7rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: -0.25rem;
+}
+
 footer{
     background-color: #093931;
-    text-align: left;
-    margin-top: 1px;
-    margin-bottom: 2px;
+    height: 3rem;
 }
-.part1{
-    margin-left: 132px;
-    margin-top: 48px;
-}
-.part2{
-    margin-left: 206px;
-    margin-top: 48px;
-}
-.part3{
-    margin-top: 48px;
-    margin-left: 94px;
-    margin-right: 269px;
-}
-.part4{
-    margin-top: 44px;
-    margin-right: 132px;
-    flex-direction: row;
-}
-.busqueda{
+
+.footer{
+    background-color: #093931;
     display: flex;
-    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-between;
+
 }
-.busqueda-estilo{
-    display: inline-flex;
-    padding: 10px, 132px, 9px, 38px;
-    align-items: center;
-    gap: 6px;
-    border-radius: 18px, 0px, 38px;
-    border: 1px;
+.parrafoContenedorFooter{
+color: #FFFFFF;
+font-family: 'manrope';
+font-size: 0.8rem;
 }
-.part4 .busqueda-estilo::placeholder{
-    color: #FFF;
-    font-family: 'Manrope Light', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-.img-busqueda{
-    width: 16px;
-    height: 16px;
-    margin-left: 20px;
-    position: absolute;
-}
-.part4 button{
-    padding: 10px;
-    justify-content: right;
-    align-items: right;
-    border-radius:0px, 18px, 18px, 0px;
-    background:#F2C66D;
-    position: absolute;
-    margin-left: 242px;
-    font-weight: 400;
-    line-height: 22px;
-    outline: none;
-    border:none;
-    margin-left: 272px;
-}
-.redessociales{
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    gap: 10px;
-}
+
+
 
 
