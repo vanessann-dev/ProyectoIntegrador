@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope&display=swap");
+*{
+    box-sizing: border-box;
+}
+:root{
+    --tipogrfia-body: 'Cormorant garamond',
+       sans-serif;
+    --tamano-fuente: 16px
+    --primary-color:
+    --secundary-color:
+    --third-color:
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--tipogrfia-body);
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFB;
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+/* Selector de tipo: nombre de una etiqueta -- Selector universal: * (todos los elementos del documento HTML) -- Selector de clases: .(Segudo del nombre de la clase) --- Selector de ID: #(Seguido del nombre del ID) */
+header{
+    background-color: #093931;
+    color: #F5D38E;
+}
+.header-top {
+    display: flex;
+    color: #F5D38E;
+    font-family: 'Cormorant garamond';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+}
+.header-top h2{
+    width: 50%;
+    height: 46px;
+    font-size: 30px;
+    margin-left: 10%;
+    padding-top: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.titulo-header{
+    font-weight: 1;
+}
+.listacontenido{
+    display: flex;
+    justify-content: space-between;
+    background-color: #093931;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+    font-family: "manrope";
+}
+.listacontenido:hover{
+color: #F5D38E;
+border-bottom: 3px solid #F5D38E;
+border-radius: 2px;
+}
+.titles .title h2{
+    font-family: "Cormorant garamond";
+    font-weight: 400;
+    font-size: 72;
+    line-height: 94;
+    color: #F5D38E;
+    width: 2rem;
+    height: 282px;
+    top: 232px;
+    left: 132px;
+}
+.titles .titulo{
+    font-family: "Cormorant garamond";
+    width: 450px;
+    height: 282px;
+    padding-top: 20px;
+    /* padding-right: 30px; */
+    margin-left: 20%;
+    font-size: 41px;
+    line-height: 94px;
+    font-weight: 400;
+}
+.titulo h2{
+font-weight: 2;
+font-family: "cormorant garamond";
+}
+.imagenes2{
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    position: absolute;
+    margin-left: 50%;
+}
+.imagen1{
+    position: absolute;
+width: 25rem;
+height: 35rem;
+}
+.imagen2{
+    margin-left: 18rem;
+    margin-top: 7rem;
+position: absolute;
+z-index: 3;
+width: 17rem;
+height: 23rem;
+}
+.header-image-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    height: 41rem;
+    /* justify-content: space-between; */
+}
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    /* padding-right: 30px; */
+    margin-top: 90px;
+    text-align: left;
+    padding-left: 50px;
+}
+.tittle{
+    padding-left: 66px;
+}
+.boton-titulo {
+    font-family: "Manrope";
+    width: 150px;
+    height: 40px;
+    /* padding: 12px, 59px, 12px, 59px; */
+    border-radius: 26px;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style:groove;
+    color: white;
+    font-size: 18px;
+}
+.encabezado {
+    background-image: url(../Assets/fondo.png)
+}
+.imagenes .imagen2 {
+    height: 321px;
+    width: 241px;
+    position: absolute;
+    top: 250px;
+    left: 1100px;
+    border-radius: 121px, 121px, 0px, 0px;
+}
+.imagenes .imagen1{
+    height: 543px;
+    width: 407px;
+    /* top: 139px;
+    left: 741px; */
+    border-radius: 8px;
+}
+.servicios{
+    flex-wrap: wrap;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.carta-servicio{
+    width: 20%;
+    font-family: "Manrope";
+}
+.carta-servicio img{
+margin-bottom: 0.8rem;
+}
+.carta-titulo{
+    font-family: "cormorant garamond";
+}
+.carta-texto{
+    color: #9095A0;
+    font-size: 0.9rem;
+}
+.productos1{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    /* gap: 5rem; */
+    /* justify-content: space-between; */
+    padding-top: 75px;
+}
+.productos1 p{
+    padding-top: 0%;
+    font-family: "manrope";
+    color: #171A1F;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 26px;
+    /* Width: 57px; */
+    Height:26px;
+}
+.comprar1texto{
+    font-size: 0.8rem;
+    font-family: "manrope";
+    color: #9095A0;
+    margin-bottom: 1.5rem;
+}
+.comprar1contenedor{
+    margin-left: 10%;
+   margin-right: 4%;
+}
+.comprar1 h2{
+    font-family: "cormorant garamond";
+    color: #0D554A;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+    Width:50%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+/* seccion our collection */
+.productos2{
+    overflow: hidden;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 75px;
+}
+.productos2 p{
+    padding-top: 0%;
+    font-family: "manrope";
+    color: #171A1F;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 26px;
+    /* Width: 57px; */
+    Height:26px;
+}
+.comprar2texto{
+    font-size: 0.8rem;
+    font-family: "manrope";
+    color: #9095A0;
+    margin-bottom: 1.5rem;
+}
+.comprar2contenedor{
+    margin-left: 10%;
+    margin-right: 4%;
+}
+.comprar2 h3{
+    font-family: "cormorant garamond";
+    color: #0D554A;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+    Width:100%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+.fotos1{
+    display: flex;
+}
+.fotos1 img{
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+ .cartas1{
+background-color: #FFFFFF;
+margin-right: 2rem;
+border-radius: 0px 0px 15px 15px;
+ }
+ .fotos2{
+    display: flex;
+}
+.fotos2 img{
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+ .cartas2{
+background-color: #FFFFFF;
+margin-right: 2rem;
+border-radius: 0px 0px 15px 15px;
+ }
+.boton1, .boton2{
+    border-radius: 26px;
+    height: 3rem;
+    width: 12rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    font-size: 18px;
+}
+.comprar1, .comprar2 img{
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Sección Collection*/
+.colecciones{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.contenedorTituloColeccion{
+    color:#0D554A;
+    margin-bottom: 2rem;
+}
+
+.contenedorColumnas{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contenedorColumnas img{
+ 
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 90%;
+}
+
+.columnaLateral{
+ margin-top: 2rem;
+
+}
+
+.columnaCentral{
+
+}
+
+.buttonColec{
+    border-radius: 26px;
+    height: 3rem;
+    width: 12rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    font-size: 18px;
+}
+
+
+.historia h2{
+    display: flex;
+    justify-content: center;
+    font-family: "cormorant garamond";
+    font-weight: 600;
+    font-size: 40px;
+    color: #0D554A;
+    line-height: 56px;
+    align-items: center;
+    height: 56px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.historial{
+    display: flex;
+    justify-content: center;
+    /* padding-left: 206px;
+    padding-right: 50px;
+    padding-bottom: 50px; */
+    width: 100%;
+    height: 390px;
+    border-radius: 8px;
+}
+.our-history{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: ;
+    margin-right: ;
+    margin-bottom: ; */
+}
+.historial{
+    width: 100%;
+}
+.historial img{
+    width: 100%;
+}
+/*Estilos Generales*/
+
+.txtG{
+    color:#0D554A;
+}
+
+/*Estilos sección From People*/
+.from-people{
+    background-color:#0D554A;
+    display: flex;
+    padding-top: 3rem;
+    
+}
+.texto-people-txtF{
+    margin-left: 10%;
+    margin-top: 5rem;
+    width: 50%;
+}
+.fuente1{
+    color: #FFFFFF;
+    font-family: "cormorant garamond";
+    font-size: 2rem;
+    font-weight: 80;
+    margin-bottom: 1.7rem;
+}
+.fuente2{
+    font-size: 0.9rem;
+    width: 60%;
+    font-family: "manrope";
+    color: #FFFFFF;
+    font-weight: 2;
+    line-height: 1.5;
+}
+.fuente3{
+    font-size: 0.9rem;
+    width: 90%;
+    font-family: "manrope";
+    color: #FFFFFF;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.texto-people{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+.target{
+    margin-bottom: 3rem;
+    margin-right: 10%;
+    margin-left: 10rem;
+    height: 30%;
+    background-color: #171A1F4D;
+    display: flex;
+    border-radius: 8px;
+}
+
+.target-container{
+
+}
+
+.target-img-container{
+    
+    border-radius: 8px 0px 0px 8px ;
+}
+.target-parrafo{
+    /*display: flex;*/
+    font-family: "manrope";
+    color: #FFFFFF;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 20%;
+   
+
+}
+.target-texto1{
+    font-size: 0.7rem;
+    line-height: 1.7;
+}
+.target-texto2{
+    font-size: 1.2rem;
+    font-weight: 100rem;
+margin-top: 1rem;
+margin-bottom: 0.1rem;
+}
+.target-texto3{
+}
+.button-people{
+    height: 3.2rem;
+    margin-top: 2.85rem;
+    margin-left: 10.5rem;
+    z-index: 50;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+.darling-footer{
+    display: flex;
+    background-color: #093931;
+    height: 10rem;
+ 
+
+}
+/*Estilos sección Footer*/
+
+.darling-title-footer{
+    margin-top: 3rem;
+}
+.darlingFooterContainer{
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.tituloDarlingFooter{
+    color: #F5D38E;
+}
+
+.navColumna1Footer{
+    margin-left: 15%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.navColumna2Footer{
+    margin-left: 5%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.subscribeAndShare{
+    margin-top: 3rem;
+    margin-left: 15%; 
+    width: 100%;
+}
+
+.tituloSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'cormorant garamond';
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.parrafoSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'manrope';
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.contenedorInputBusqueda{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputBusqueda{
+    background-image: url(../Assets/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #093931;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.inputBusqueda::placeholder{
+    color: white;
+}
+
+.botonSubscribe{
+    background: #F2C66D;
+    width: 7rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: -0.25rem;
+}
+
+footer{
+    background-color: #093931;
+    height: 3rem;
+}
+
+.footer{
+    background-color: #093931;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-between;
+
+}
+.parrafoContenedorFooter{
+color: #FFFFFF;
+font-family: 'manrope';
+font-size: 0.8rem;
+}
+
+
+
+
