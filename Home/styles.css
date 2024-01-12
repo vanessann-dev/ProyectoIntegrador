@@ -604,6 +604,50 @@ font-family: 'manrope';
 font-size: 0.8rem;
 }
 
-
-
-
+@media (max-width: 400px) {
+    .header-top {
+        display: block !important;
+    } 
+    nav {
+        display: block;
+        margin-left: 40px
+    }
+    .header-image-bottom {
+        display: block;
+    }
+    .imagenes2 {
+        display: none
+    }
+    .titles {
+        padding-left: 0
+    }
+    .titles .titulo {
+        margin-left: 0;
+        width: 100%
+    }
+    .productos1 {
+        display: block;
+    }
+    .from-people {
+        display:block
+    }
+    .productos2 {
+        display: block
+    }
+    .fotos1 {
+        flex-direction: column;
+    }
+    .fotos2 {
+        flex-direction: column
+    }
+    .target {
+        margin-left: 0;
+        flex-direction:column
+    }
+    .darling-footer {
+        height: auto
+    }
+    .darlingFooterContainer {
+        flex-direction: column
+    }
+}
