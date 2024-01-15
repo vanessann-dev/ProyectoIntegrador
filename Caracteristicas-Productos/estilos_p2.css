@@ -39,3 +39,206 @@ color: #F5D38E;
 border-bottom: 3px solid #F5D38E;
 border-radius: 2px;
 }
+
+/*Estilos sección From People*/
+.from-people{
+    background-color:#0D554A;
+    display: flex;
+    padding-top: 3rem;
+    
+}
+.texto-people-txtF{
+    margin-left: 10%;
+    margin-top: 5rem;
+    width: 50%;
+}
+.fuente1{
+    color: #FFFFFF;
+    font-family: "cormorant garamond";
+    font-size: 2rem;
+    font-weight: 80;
+    margin-bottom: 1.7rem;
+}
+.fuente2{
+    font-size: 0.9rem;
+    width: 60%;
+    font-family: "manrope";
+    color: #FFFFFF;
+    font-weight: 2;
+    line-height: 1.5;
+}
+.fuente3{
+    font-size: 0.9rem;
+    width: 90%;
+    font-family: "manrope";
+    color: #FFFFFF;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.texto-people{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+.target{
+    margin-bottom: 3rem;
+    margin-right: 10%;
+    margin-left: 10rem;
+    height: 30%;
+    background-color: #171A1F4D;
+    display: flex;
+    border-radius: 8px;
+}
+
+.target-container{
+
+}
+
+.target-img-container{
+    
+    border-radius: 8px 0px 0px 8px ;
+}
+.target-parrafo{
+    /*display: flex;*/
+    font-family: "manrope";
+    color: #FFFFFF;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 20%;
+   
+
+}
+.target-texto1{
+    font-size: 0.7rem;
+    line-height: 1.7;
+}
+.target-texto2{
+    font-size: 1.2rem;
+    font-weight: 100rem;
+margin-top: 1rem;
+margin-bottom: 0.1rem;
+}
+.target-texto3{
+}
+.button-people{
+    height: 3.2rem;
+    margin-top: 2.85rem;
+    margin-left: 10.5rem;
+    z-index: 50;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+.darling-footer{
+    display: flex;
+    background-color: #093931;
+    height: 10rem;
+ 
+
+}
+/*Estilos sección Footer*/
+
+.darling-title-footer{
+    margin-top: 3rem;
+}
+.darlingFooterContainer{
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.tituloDarlingFooter{
+    color: #F5D38E;
+}
+
+.navColumna1Footer{
+    margin-left: 15%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.navColumna2Footer{
+    margin-left: 5%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.subscribeAndShare{
+    margin-top: 3rem;
+    margin-left: 15%; 
+    width: 100%;
+}
+
+.tituloSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'cormorant garamond';
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.parrafoSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'manrope';
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.contenedorInputBusqueda{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputBusqueda{
+    background-image: url(../Assets/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #093931;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.inputBusqueda::placeholder{
+    color: white;
+}
+
+.botonSubscribe{
+    background: #F2C66D;
+    width: 7rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: -0.25rem;
+}
+
+footer{
+    background-color: #093931;
+    height: 3rem;
+}
+
+.footer{
+    background-color: #093931;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-between;
+
+}
+.parrafoContenedorFooter{
+color: #FFFFFF;
+font-family: 'manrope';
+font-size: 0.8rem;
+}
