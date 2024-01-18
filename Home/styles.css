@@ -30,12 +30,14 @@ header{
     color: #F5D38E;
 }
 .header-top {
+    background-color: #093931;
     display: flex;
     color: #F5D38E;
     font-family: 'Cormorant garamond';
     font-weight: 400;
     font-size: 30px;
     line-height: 46px;
+    padding-bottom: 2%;
 }
 .header-top h2{
     width: 50%;

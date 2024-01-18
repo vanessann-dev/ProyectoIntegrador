@@ -34,6 +34,7 @@ header{
 }
 
 .header-top1 {
+    background-color: #093931;
     display: flex;
     justify-content: space-between;
     margin-right: 8%;
@@ -74,7 +75,7 @@ header{
 
 .listacontenido1:hover{
     color: #F5D38E;
-    border-bottom: 2px solid #F5D38E;
+    border-bottom: 3px solid #F5D38E;
     border-radius: 2px;
 }
 
@@ -131,7 +132,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 8%;
     padding-top: 5%;
     max-width: 100%;
     color: #0D554A;
