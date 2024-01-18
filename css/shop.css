@@ -29,7 +29,7 @@ body{
 header{
     background-color: #093931;
     color: #F5D38E;
-    background-image: url(../Imagenes-Asents2/fondo.png);
+    background-image: url(../Assets/fondo.png);
 }
 
 .header-top1 {
@@ -438,7 +438,7 @@ margin-bottom: 0.8rem;
 }
 
 .inputBusqueda1{
-    background-image: url(../Imagenes-Asents2/Mail.png);
+    background-image: url(../Assets/Mail.png);
     background-repeat: no-repeat;
     background-position: 10px;
     background-color: #093931;
@@ -469,8 +469,8 @@ footer{
 .footer1{
     background-color: #093931;
     display: flex;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 8%;
+    margin-left: 8%;
     justify-content: space-between;
 }
 
