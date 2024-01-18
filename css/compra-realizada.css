@@ -140,6 +140,8 @@ header{
     color: #9095A0;
     font-family: "manrope";
     font-size: 0.8rem;
+    margin-left: 0.5rem;
+    
 }
 
 .especificaciones-compra h3{
@@ -160,7 +162,7 @@ header{
 }
 
 .parrafo-order-line{
-    padding-left: 3%;
+    padding-left: 6%;
     padding-top: 3%;
     padding-bottom: 4%;
     font-family: "manrope";
@@ -180,7 +182,7 @@ header{
 
 .datos-compra-detalle-producto{
     display: flex;
-    padding-left: 3%;
+    padding-left: 6%;
     line-height: 1.5rem;
 }
 
@@ -189,7 +191,7 @@ header{
     color:#171A1F;
     font-family: "manrope";
     font-size: 0.9rem;
-    padding-right: 6%;
+    padding-right: 8%;
 }
 
 .especificaciones-compra-img{
@@ -362,6 +364,15 @@ footer{
         width: 100%;
     }
 
+    .especificaciones-compra-img {
+        width: 8rem;
+    }
+
+    .boton-comprar {
+        margin-top: 4%;
+        
+    }
+
     .darlingFooterContainer6{
         display: flex;
         flex-direction: column;
@@ -373,13 +384,13 @@ footer{
 
     footer{
         background-color: #093931;
-        height: 40rem;
+        height: 34rem;
     }
 
     .footer6{
         display: flex;
-        flex-direction: column-reverse;
-        padding-top: 90%;
+        flex-direction: none;
+        padding-top: 83%;
 
     }
 

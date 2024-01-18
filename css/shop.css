@@ -16,6 +16,7 @@
 
 main{
     padding-left: 8%;
+    padding-right: 8%;
 }
 
 body{
@@ -69,7 +70,6 @@ header{
     font-family: "manrope";
     line-height: 1;
     font-size: 0.8rem;
-    
 }
 
 .listacontenido1:hover{
@@ -202,18 +202,29 @@ header{
 
 .target1{
     background-color: #FFFFFF;
-    margin-right: 8%;
+    border-radius: 0px 0px 15px 15px;
+    margin-right: 2%;
+ }
+
+ .target1-ultima{
+    background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
  }
 
+ .target1-ultima img{
+    max-width: 100%;
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
 
  .ptoductos-primer-linea h2{
     font-family: "cormorant garamond";
     color: #171A1F;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     Width:100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
  .ptoductos-primer-linea p{
@@ -224,6 +235,7 @@ header{
     font-size: 0.9rem;
     line-height: 26px;
     Height:26px;
+    margin-left: 0.5rem;
 }
 
 .ptoductos-segunda-linea{
@@ -242,7 +254,18 @@ header{
 
 .target2{
     background-color: #FFFFFF;
-    margin-right: 8%;
+    border-radius: 0px 0px 15px 15px;
+    margin-right: 2%;
+ }
+
+ .target2-ultima img{
+    max-width: 100%;
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+
+.target2-ultima{
+    background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
  }
 
@@ -250,9 +273,10 @@ header{
     font-family: "cormorant garamond";
     color: #171A1F;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     Width:100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
  .ptoductos-segunda-linea p{
@@ -263,6 +287,7 @@ header{
     font-size: 0.9rem;
     line-height: 26px;
     Height:26px;
+    margin-left: 0.5rem;
 }
 
 .ptoductos-tercer-linea{
@@ -273,16 +298,45 @@ header{
     margin-bottom: 5%;
 }
 
-.target3 img{
+.target3-img{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+    margin-right: 2%;
+ }
+
+.target3-img img{
     max-width: 100%;
     border-top: 50px;
     border-radius: 5px 5px 0px 0px;
  }
 
+.contenedor-target3{
+    margin-right: 2%;
+}
+
 .target3{
     background-color: #FFFFFF;
-    margin-right: 8%;
     border-radius: 0px 0px 15px 15px;
+    margin-bottom: 1.5rem;
+   
+ }
+
+ .target3-ultima img{
+    max-width: 100%;
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+
+ .target3-ultima{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+   
+ }
+
+ .target3 img{
+    max-width: 100%;
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
  }
 
  .ptoductos-tercer-linea h3{
@@ -292,6 +346,7 @@ header{
     font-size: 1.7rem;
     Width:100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
  }
 
  .ptoductos-tercer-linea h2{
@@ -301,6 +356,7 @@ header{
     font-size: 1.5rem;
     Width:100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
  .ptoductos-tercer-linea p{
@@ -311,6 +367,7 @@ header{
     font-size: 0.9rem;
     line-height: 26px;
     Height:26px;
+    margin-left: 0.5rem;
 }
 
 .navegacion3{
@@ -513,6 +570,18 @@ font-size: 0.8rem;
 
     .ptoductos-tercer-linea {
         display: block;
+    }
+
+    .ptoductos-tercer-linea h3 {
+        font-size: 1.2rem;
+    }
+
+    .ptoductos-tercer-linea h2 {
+        font-size: 1.2rem;
+    }
+
+    .target3-img img {
+        max-width: 74%;
     }
 
     .target3 img {
