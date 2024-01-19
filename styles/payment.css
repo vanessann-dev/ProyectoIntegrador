@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope&display=swap");
+*{
+    box-sizing: border-box;
+}
+:root{
+    --tipogrfia-body: 'Cormorant garamond',
+       sans-serif;
+    --tamano-fuente: 16px
+    --primary-color:
+    --secundary-color:
+    --third-color:
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--tipogrfia-body);
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFB;
+    /* text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+/*Encabezado*/
+header{
+    background-color: #093931;
+    color: #F5D38E;
+}
+.header-top {
+    display: flex;
+    color: #F5D38E;
+    font-family: 'Cormorant garamond';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+}
+.header-top h2{
+    width: 50%;
+    height: 46px;
+    font-size: 30px;
+    margin-left: 10%;
+    padding-top: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.titulo-header{
+    font-weight: 1;
+}
+.listacontenido{
+    display: flex;
+    justify-content: space-between;
+    background-color: #093931;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+    font-family: "manrope";
+}
+.listacontenido:hover{
+color: #F5D38E;
+border-bottom: 3px solid #F5D38E;
+border-radius: 2px;
+}
+
+/*Estilos seccion order summary*/
+
+.contenedor-orderSummary{
+
+}
+
+.cont-order-img{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    width: 12%;
+    gap: 1rem;
+
+}
+
+/* seccion You make Option*/
+.productos2{
+    overflow: hidden;
+    margin-top: 3rem;
+    /* justify-content: space-between; */
+    
+}
+.productos2 p{
+    padding-top: 0%;
+    font-family: "manrope";
+    color: #171A1F;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 26px;
+    /* Width: 57px; */
+    Height:26px;
+}
+.comprar2texto{
+    font-size: 0.8rem;
+    font-family: "manrope";
+    color: #9095A0;
+    
+}
+.comprar2contenedor{
+    margin-left: 14.1%;
+    margin-right: 4%;
+}
+.comprar2 h3{
+    font-family: "cormorant garamond";
+    color: #0D554A;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+    Width:100%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+.fotos1{
+    display: flex;
+}
+.fotos1 img{
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+ .cartas1{
+background-color: #FFFFFF;
+margin-right: 2rem;
+border-radius: 0px 0px 15px 15px;
+ }
+ .fotos2{
+    display: flex;
+    margin-left: 15rem;
+}
+.fotos2 img{
+    border-top: 50px;
+    border-radius: 5px 5px 0px 0px;
+ }
+ .cartas2{
+background-color: #FFFFFF;
+margin-right: 2rem;
+border-radius: 0px 0px 15px 15px;
+ }
+.boton1, .boton2{
+    border-radius: 26px;
+    height: 3rem;
+    width: 12rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    font-size: 18px;
+}
+.comprar1, .comprar2 img{
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.darling-footer{
+    display: flex;
+    background-color: #093931;
+    height: 10rem;
+ 
+
+}
+/*Estilos sección Footer*/
+
+.darling-title-footer{
+    margin-top: 3rem;
+}
+.darlingFooterContainer{
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.tituloDarlingFooter{
+    color: #F5D38E;
+}
+
+.navColumna1Footer{
+    margin-left: 15%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.navColumna2Footer{
+    margin-left: 5%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.subscribeAndShare{
+    margin-top: 3rem;
+    margin-left: 15%; 
+    width: 100%;
+}
+
+.tituloSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'cormorant garamond';
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.parrafoSubscribeFooter{
+    color:#FFFFFF;
+    font-family: 'manrope';
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.contenedorInputBusqueda{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputBusqueda{
+    background-image: url(../Assets/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #093931;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.inputBusqueda::placeholder{
+    color: white;
+}
+
+.botonSubscribe{
+    background: #F2C66D;
+    width: 7rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: -0.25rem;
+}
+
+footer{
+    background-color: #093931;
+    height: 3rem;
+}
+
+.footer{
+    background-color: #093931;
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    justify-content: space-between;
+
+}
+.parrafoContenedorFooter{
+color: #FFFFFF;
+font-family: 'manrope';
+font-size: 0.8rem;
+}
