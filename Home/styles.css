@@ -429,7 +429,7 @@ nav{
 
 /*Estilos sección From People*/
 .from-people{
-    background-color:#0D554A;
+    background-color:#093931;
     display: flex;
     padding-top: 3rem;
     
@@ -619,8 +619,8 @@ footer{
 .footer{
     background-color: #093931;
     display: flex;
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
     justify-content: space-between;
 
 }
