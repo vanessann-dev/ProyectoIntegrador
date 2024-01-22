@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --tipogrfia-body: 'Cormorant garamond',
+       sans-serif;
+    --tamano-fuente: 16px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: var(--tipogrfia-body);
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFB;
+} 
+
+header{
+    background-color: #093931;
+    color: #F5D38E;
+}
+
+.header-top6 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8%;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
+    color: #F5D38E;
+    font-family: 'Cormorant garamond';
+}
+
+.header-top6 h2{
+    width: 50%;
+    height: 46px;
+    font-size: 25px;
+    margin-left: 8%;
+}
+
+.navegacion6{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; 
+    
+}
+
+.titulo-header6{
+    font-size: 1.4rem;
+    font-weight: 2.5;
+    padding-top: 0.2rem;
+}
+
+.listacontenido6{
+    display: flex;
+    justify-content: space-between;
+    background-color: #093931;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 1.2rem;
+    font-family: "manrope";
+    line-height: 1;
+    font-size: 0.8rem; 
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+.titulo6{
+    display: flex;
+    justify-content: center;
+    font-family: "Cormorant garamond";
+    height: 6rem;
+    padding-top: 20px;
+    font-size: 2.9rem;
+    line-height: 7rem;
+    font-weight: 2; 
+}
+
+.parte1{
+    padding-top: 5%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 4%;
+}
+
+.parte1 h1{
+    font-family: "Cormorant garamond";
+    font-size: 2rem;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    color: #171A1F;
+}
+
+.parte1 p{
+    font-family: "manrope";
+    font-size: 0.8rem;
+    color: #9095A0;
+}
+
+.contenedor-principal6 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 8%;
+    padding-top: 3%;
+}
+
+.datos-compra{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 3rem;
+}
+
+.especificaciones-compra{
+    display: flex;
+    align-items: center;
+}
+
+.especificaciones-compra p{
+    color: #9095A0;
+    font-family: "manrope";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    
+}
+
+.especificaciones-compra h3{
+    color: #323842;
+    font-family: "cormorant garamond";
+}
+
+.linea{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.contenedor-parrafo p{
+    color:#171A1F;
+    font-family: "manrope";
+    font-size: 0.9rem;
+}
+
+.parrafo-order-line{
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    font-family: "manrope";
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.datos-compra img{
+    padding-bottom: 3.5%;
+}
+
+.detalle-producto{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.datos-compra-detalle-producto{
+    display: flex;
+    padding-left: 6%;
+    line-height: 1.5rem;
+}
+
+.contenedor-parrafo-img{
+    display: flex;
+    color:#171A1F;
+    font-family: "manrope";
+    font-size: 0.9rem;
+    padding-right: 8%;
+}
+
+.especificaciones-compra-img{
+    padding-left: 3%;
+    width: 11rem;
+}
+
+.especificaciones-compra-img p{
+    color: #9095A0;
+    font-family: "manrope";
+    font-size: 0.8rem;
+}
+
+.especificaciones-compra-img h3{
+    color: #323842;
+    font-family: "cormorant garamond";
+}
+
+.especificaciones-compra-img button{
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    height: 1.5rem;
+    width: 2.5rem;
+    background-color: #F3F4F6;
+    color: #323842;
+    font-family: "manrope";
+}
+
+.boton-comprar{
+    font-family: "Manrope";
+    height: 43px;
+    width: 26%;
+    border-radius: 26px;
+    border: 1px;
+    font-weight: 400;
+    background-color: #0D554A;
+    border-style:groove;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 3%;
+    margin-left: 38%;
+   
+}
+
+.darling-footer6{
+    display: flex;
+    background-color: #093931;
+    height: 10rem;
+}
+
+.darling-title-footer6{
+    margin-top: 3rem;
+}
+
+.darlingFooterContainer6{
+    display: flex;
+    margin-right: 8%;
+    margin-left: 8%;
+    width: 100%;
+}
+
+.tituloDarlingFooter6{
+    color: #F5D38E;
+}
+
+.navColumna1Footer6{
+    margin-left: 15%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.navColumna2Footer6{
+    margin-left: 5%;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.subscribeAndShare6{
+    margin-top: 3rem;
+    margin-left: 39%; 
+    width: 100%;
+}
+
+.tituloSubscribeFooter6{
+    color:#FFFFFF;
+    font-family: 'cormorant garamond';
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.parrafoSubscribeFooter6{
+    color:#FFFFFF;
+    font-family: 'manrope';
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.contenedorInputBusqueda6{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputBusqueda6{
+    background-image: url(../Assets/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #093931;
+    height: 2rem;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid white;
+    width: 122%;
+}
+
+.inputBusqueda6::placeholder{
+    color: white;
+}
+
+.botonSubscribe6{
+    background: #F2C66D;
+    width: 7rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    margin-left: 1.75rem;
+}
+
+footer{
+    background-color: #093931;
+}
+
+.footer6{
+    background-color: #093931;
+    display: flex;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+}
+
+.parrafoContenedorFooter6{
+    color: #FFFFFF;
+    font-family: 'manrope';
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .navegacion6{
+        display: none;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        height: 2rem;
+        width: 1.5rem;
+        padding-top: 3%;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .especificaciones-compra-img {
+        width: 8rem;
+    }
+
+    .boton-comprar {
+        margin-top: 4%;
+        
+    }
+
+    .darlingFooterContainer6{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .darling-title-footer6 {
+        text-align: center;
+    }
+
+    footer{
+        background-color: #093931;
+        height: 34rem;
+    }
+
+    .footer6{
+        display: flex;
+        flex-direction: none;
+        padding-top: 83%;
+
+    }
+
+    .navColumna1Footer6 {
+        margin-left: 0;
+        text-align: center;;
+    }
+
+    .navColumna2Footer6 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .inputBusqueda6 {
+        width: 116%;
+       
+    }
+
+    .parrafoSubscribeFooter6{
+        width: 50%;
+        padding: 0rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .subscribeAndShare6 {
+        margin-top: 0rem;
+        margin-left: 0%;
+    }
+
+    .input{
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .tituloSubscribeFooter6{
+        text-align: center;
+    }
+
+    .parrafo{
+       display: flex;
+       justify-content: center;
+    }
+
+    .boton-suscribe6{
+        text-align: center;
+    }
+    
+}
