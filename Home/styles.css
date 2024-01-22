@@ -715,7 +715,8 @@ font-size: 0.8rem;
 
     .target {
         margin-left: 0;
-        flex-direction:column
+        flex-direction:column;
+        margin-right: 0;
     }
 
     .colecciones {
@@ -737,7 +738,7 @@ font-size: 0.8rem;
     }
 
     .historia h2 {
-        padding-top: 60px;
+        padding-top: 44px;
     }
 
     .historial img {
@@ -745,7 +746,55 @@ font-size: 0.8rem;
     }
 
     .historial {
-        height: none;
+        height: 3%;
+    }
+
+    .fuente1 {
+        width: 183%;
+        margin-bottom: 1rem
+    }
+
+    .fuente2 {
+        width: 182%;
+    }
+
+    .fuente3 {
+        width: 200%;
+    }
+
+    .target {
+        margin-bottom: 0;
+    }
+
+    .target-container {
+        text-align: center;
+        padding-top: 2rem 
+    }
+
+    .target-parrafo {
+        margin-left: 2rem;
+        margin-right: 10%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #093931;
+        height: 31rem;
+    }
+
+    .tituloDarlingFooter {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .button-people {
+        height: 2.2rem;
+        margin-top: 0.85rem;
+        margin-left: 7.5rem;
+        display: flex;
+        gap: 1rem;
     }
 
     .texto-people-txtF {
@@ -755,10 +804,32 @@ font-size: 0.8rem;
         align-items: center;
     }
 
+    .navColumna1Footer {
+        margin-left: 0%;
+    }
+
+    .navColumna2Footer {
+        margin-left: 0%;
+    }
+
+    .subscribeAndShare {
+        margin-top: 0rem;
+        margin-left: 0%;
+    }
+
+    .parrafoSubscribeFooter {
+        text-align: center;
+    }
+
     .darling-footer {
-        height: auto
+        height: auto;
+        padding-bottom: 1rem;
     }
+
     .darlingFooterContainer {
-        flex-direction: column
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
+    
 }
