@@ -25,25 +25,24 @@ body{
     align-items: center;*/
 }
 
-/*Encabezado*/
 header{
     background-color: #093931;
     color: #F5D38E;
+    height: 3.5rem;
 }
 .header-top {
     display: flex;
     color: #F5D38E;
     font-family: 'Cormorant garamond';
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 30px;
-    line-height: 46px;
 }
 .header-top h2{
     width: 50%;
     height: 46px;
     font-size: 30px;
+    margin-top: 0.5rem;
     margin-left: 10%;
-    padding-top: 1.5rem;
 }
 nav{
     display: flex;
@@ -52,6 +51,7 @@ nav{
 }
 .titulo-header{
     font-weight: 1;
+
 }
 .listacontenido{
     display: flex;
@@ -59,8 +59,9 @@ nav{
     background-color: #093931;
     border: none;
     color: #FFFFFF;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-family: "manrope";
+    height: 2rem;
 }
 .listacontenido:hover{
 color: #F5D38E;
@@ -71,17 +72,35 @@ border-radius: 2px;
 /*Estilos seccion order summary*/
 
 .contenedor-orderSummary{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    width: 800px;
+    height: 498px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 
 }
 
 .cont-order-img{
     display: flex;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
     flex-direction: column;
     max-width: 100%;
-    height: auto;
-    width: 12%;
+    height: 120px;
+    width: 120px;
     gap: 1rem;
 
+}
+
+.contLRing{
+    display: flex;
+    margin-left: 18rem;
+    justify-content: center;
+    gap: 5rem;
+    
 }
 
 /* seccion You make Option*/

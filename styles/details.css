@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: var(--tipogrfia-body);
     margin: 0;
@@ -29,6 +30,8 @@ header{
     background-color: #093931;
     color: #F5D38E;
     height: 3.5rem;
+    /* padding-right: 10%;  */
+    padding-left: 10%;
 }
 .header-top {
     display: flex;
@@ -36,13 +39,16 @@ header{
     font-family: 'Cormorant garamond';
     font-weight: 400px;
     font-size: 30px;
+    max-width: 100%;
+    /* width: 10%; */
+    /*margin-right: 10%;*/
 }
 .header-top h2{
     width: 50%;
     height: 46px;
     font-size: 30px;
     margin-top: 0.5rem;
-    margin-left: 10%;
+    /*  margin-left: 9%; */
 }
 nav{
     display: flex;
@@ -64,39 +70,113 @@ nav{
     height: 2rem;
 }
 .listacontenido:hover{
-color: #F5D38E;
-border-bottom: 3px solid #F5D38E;
-border-radius: 2px;
+    color: #F5D38E;
+    border-bottom: 3px solid #F5D38E;
+    border-radius: 2px;
 }
 
 /*Estilos sección Luxury Charms Ring*/
 
-.rutaNav{
-    display: flex;
-    margin-top: 4rem;
-    margin-left: 9.7rem;
+.tituloLux{
+    color: #0D554A;
+    font-family: "cormorant garamond";
+    font-weight: 700;
+    font-size: 2.3rem;
 }
+
+.subCode{
+    color: #323842;
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.subtitulosLux{
+    color: #424955;
+    font-family: "manrope";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 0.2rem;
+}
+
+.subtitulosLuxQ{
+    color: #424955;
+    font-family: "manrope";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding-top: 1rem;
+}
+
+.precioLux{
+    color: #B37D10;
+    font-family: Manrope;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.questionSize{
+    color: #424955;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    text-decoration-line: underline;
+}
+
+.estiloRuta{
+    gap: 2rem;
+    padding-left: 10%;
+    padding-right:  10%;
+ }
+ 
+.rutaNav{
+    margin-top: 5rem;
+    /* margin-left: 9%; */    
+}
+
+.rutaNav button{
+   border: none;
+   background: transparent;
+   height: 2rem;
+   width: 6rem;
+   font-family: "Cormorant Garamond";
+   font-size: 0.9rem;
+   color:#0D554A;
+   text-align: center;
+}
+
 
 .contenedor-luxury{
     display: flex;
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
+    padding-left: 10%;
+    /* padding-right: 10%;  */
 }
+
 .contenedor-individual1{
     display: flex;
     margin-top:  2rem;
-    margin-left: 8.4rem;
-    margin-right: 0.8rem;
-
+    /* margin-left: 8.4rem; */
+    /* margin-right: 0.8rem; */
 }
 .contenedor-img-peq{
     display: flex;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    width: 12%;
+    /*width: 12%;*/
     gap: 1rem;
-
 }
 
 .conImg-5{
@@ -106,6 +186,13 @@ border-radius: 2px;
 
 .contenedor-img-origin{
     margin-left: 1rem;
+    border-radius: 8px;
+}
+
+.img-luxx{
+    width: 477px;
+    height: 700px;
+    flex-shrink: 0;
 }
 .corazon{
     position: absolute;
@@ -115,10 +202,18 @@ border-radius: 2px;
 }
 
 .contenedor-individual2{
-    margin-top:  8.4rem;
-    margin-left: 8.4rem;
-    margin-right: 0.8rem;
+    margin-top:  2.5rem;
+    margin-left: 0.9rem;
+    width: 470px;
+    height: 700px;
+ 
+}
 
+.caracProductoImg{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    gap:1rem;
 }
 
 .caracteristicas{
@@ -126,8 +221,122 @@ border-radius: 2px;
     justify-content: space-between;
 }
 
-.contenedor-boton-tallas{
-    
+.contBotonTallas{
+    display: flex;
+    gap: 0.4rem;
+
+}
+
+.contBotonTallas button{
+    display: flex;
+    height: 35px;
+    width: 40px;
+    padding: 5px 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #565E6C;
+    background: #FFF;
+    color: #8F640C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 22px; 
+   
+}
+
+.contBotonQuantity{
+    display: flex; 
+    flex-direction: column;   
+
+}
+
+.contBotonQuantity button{
+
+    margin-top: 0.5rem;
+    width: 40px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background: #F3F4F6;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 22px; 
+}
+
+.contBotonesBuy{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.estiloBotonAdd{
+    border-radius: 26px;
+    height: 3rem;
+    width: 16.2rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border-style: solid;
+    color: #0D554A;
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 17px;
+    font-style: normal;    
+    font-weight: 400;
+    line-height: 28px; 
+    text-align: center;
+}
+
+.estiloBotonBuy{
+    border-radius: 26px;
+    height: 3rem;
+    width: 16.2rem;
+    align-self: center;
+    border: 1px;
+    font-weight: 400;
+    background-color: #0D554A;;
+    border-style: solid;
+    color: #FFFFFF;
+    font-size: 18px;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.contBotonesCompraa{
+  margin-top: 2rem;
+}
+
+.estiloBotonCompraa{
+    border: none;
+    background: transparent;
+    text-align: left;
+}
+.alineacionBtnCompra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.estiloSelect{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    font-family: "manrope";
+    width: 16rem;
+    height: 4rem;
 }
 
 /*Estilos Sección Description (Exquisite elegance and Timeless Charm)*/
@@ -135,35 +344,65 @@ border-radius: 2px;
 .contenedor-description{
     background: #FAFAFB;
     margin-top: 5rem;
-    margin-left: 14.6rem;
-
-    justify-content: center;
+    padding-left: 10%; 
+    padding-right: 10%;
 }
 
-.txt-description{
-
+.titleDes{
+    color: #323842;
+    font-family: Manrope; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    padding-left: 6rem;
 }
 
-.img-video-descrip{
-    
+.tituloLuxD{
+    color: #0D554A;
+    font-family: "cormorant garamond";
+    font-weight: 700;
+    font-size: 2.3rem;
+    padding-left: 6rem;
+    padding-top: 1.5rem;
+}
+.txtDesc{
+    color: #323842;
+    font-family: Manrope;
+    font-size: 18px;
+    padding-left: 6rem;
+    padding-top: 1rem;
+    padding-right: 6rem;
+}
+
+.imgViD{
+    padding-left: 96px;
+    padding-top: 4rem;
+    width: 1032px;
+    height: 581px;
+    /*padding-right: 6rem;*/
+}
+
+.playBtn{
+    position: absolute;
+    margin-top: 16rem;
+    margin-left: 38rem;
 }
 
 /*Estilos Servicios*/
 
 .servicios{
-    flex-wrap: wrap;
-    padding: 30px;
     display: flex;
-    margin-left: 2.8rem;
     justify-content: space-evenly;
     text-align: center;
+    /* margin-left: 9%; */
 }
 .carta-servicio{
     width: 20%;
     font-family: "Manrope";
 }
 .carta-servicio img{
-margin-bottom: 0.8rem;
+     margin-bottom: 0.8rem;
 }
 .carta-titulo{
     font-family: "cormorant garamond";
@@ -176,7 +415,8 @@ margin-bottom: 0.8rem;
 /* seccion You make Option*/
 .productos2{
     overflow: hidden;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    /*margin-top: 3rem;*/
     /* justify-content: space-between; */
     
 }
@@ -197,8 +437,8 @@ margin-bottom: 0.8rem;
     
 }
 .comprar2contenedor{
-    margin-left: 14.1%;
-    margin-right: 4%;
+      margin-left: 132px;
+   /* margin-right: 4%;*/
 }
 .comprar2 h3{
     font-family: "cormorant garamond";
@@ -208,7 +448,6 @@ margin-bottom: 0.8rem;
     line-height: 36px;
     Width:100%;
     margin-bottom: 1rem;
-    margin-top: 1.5rem;
 }
 .fotos1{
     display: flex;
@@ -218,22 +457,28 @@ margin-bottom: 0.8rem;
     border-radius: 5px 5px 0px 0px;
  }
  .cartas1{
-background-color: #FFFFFF;
-margin-right: 2rem;
-border-radius: 0px 0px 15px 15px;
+   background-color: #FFFFFF;
+  /*margin-right: 2rem;*/
+   border-radius: 0px 0px 15px 15px;
  }
  .fotos2{
     display: flex;
-    margin-left: 15rem;
+    padding-left: 132px;
+    padding-bottom: 6rem;
 }
-.fotos2 img{
+/*.fotos2 img{
     border-top: 50px;
     border-radius: 5px 5px 0px 0px;
- }
- .cartas2{
-background-color: #FFFFFF;
-margin-right: 2rem;
-border-radius: 0px 0px 15px 15px;
+    padding-right: 24px;
+    padding-left: 0px;
+}*/
+ 
+ .cartas2 img{
+    background-color: #FFFFFF;
+    /*border-radius: 0px 0px 15px 15px;*/
+    width: 250px;
+    height: 320px;
+    margin-right: 2rem;
  }
 .boton1, .boton2{
     border-radius: 26px;
@@ -262,7 +507,7 @@ border-radius: 0px 0px 15px 15px;
     
 }
 .texto-people-txtF{
-    margin-left: 10%;
+    margin-left: 9%;
     margin-top: 5rem;
     width: 50%;
 }
@@ -456,3 +701,4 @@ color: #FFFFFF;
 font-family: 'manrope';
 font-size: 0.8rem;
 }
+
