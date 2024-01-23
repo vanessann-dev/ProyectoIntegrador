@@ -25,25 +25,24 @@ body{
     align-items: center;*/
 }
 
-/*Encabezado*/
 header{
     background-color: #093931;
     color: #F5D38E;
+    height: 3.5rem;
 }
 .header-top {
     display: flex;
     color: #F5D38E;
     font-family: 'Cormorant garamond';
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 30px;
-    line-height: 46px;
 }
 .header-top h2{
     width: 50%;
     height: 46px;
     font-size: 30px;
+    margin-top: 0.5rem;
     margin-left: 10%;
-    padding-top: 1.5rem;
 }
 nav{
     display: flex;
@@ -52,6 +51,7 @@ nav{
 }
 .titulo-header{
     font-weight: 1;
+
 }
 .listacontenido{
     display: flex;
@@ -59,8 +59,9 @@ nav{
     background-color: #093931;
     border: none;
     color: #FFFFFF;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-family: "manrope";
+    height: 2rem;
 }
 .listacontenido:hover{
 color: #F5D38E;
@@ -70,29 +71,333 @@ border-radius: 2px;
 
 /*Estilos seccion order summary*/
 
-.contenedor-orderSummary{
+.contGeneral{
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 2.5rem;
+}
 
+.tituloO{
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.contenedor-orderSummary{
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    width: 105rem;
+    height: 498px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    gap: 0.5rem;
+}
+
+.conttLux{
+    display: flex;
+    gap: 5rem;
+    margin-top: 2%;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
+    gap: 7.5rem;
+    align-items: center;
+}
+.conttLux h2{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.conttLux p{
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.conttExq{
+    display: flex;
+    gap: 5rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
+    gap: 7.5rem;
+    align-items: center;
+}
+
+.conttExq h2{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.conttExq p{
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.conttDeli{
+    display: flex;
+    gap: 5rem;
+    margin-left: 0.1rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+    gap: 7.5rem;
+    align-items: center;
+}
+
+.conttDeli h2{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.conttDeli p{
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contenedorPayment{
+    padding: 1rem;
+    padding-left: 1.8rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    width: 50rem;
+    height: 583px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 }
 
 .cont-order-img{
     display: flex;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
     flex-direction: column;
     max-width: 100%;
-    height: auto;
-    width: 12%;
-    gap: 1rem;
+    height: 120px;
+    width: 120px;
+    gap: 1rem; 
+}
 
+
+.contLRing{
+    display: flex;
+    margin-left: 18rem;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+.propSummary{
+    justify-content: center;
+}
+
+/*Payment Method*/
+.txtChange{
+    padding-top: 1rem;
+    color: #379AE6;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.667px;
+}
+
+.tarjetaM{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #0D554A;
+    background: #F8F9FA;
+    gap:0.1rem;
+}
+
+.tarjetaM p{
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.conMc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.txtVS{
+    color: #171A1F;
+    font-family: "Cormorant Garamond";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.inputVoucher{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+
+.btnApply{
+   
+    padding: 7px 17.5px 7px 18.5px;
+    margin-left: 0.2rem;
+    align-items: center;
+    border-radius: 4px;
+    background: #F2C66D;
+    border: none;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+}
+
+.estiloInputV{
+    display: flex;
+    margin-top: 0.5rem;
+    width: 14rem;
+    padding: 7px 159px 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #9095A0;
+    background: transparent;
+}
+
+.classOff{
+    
+    width: 55px;
+    height: 28px;
+    margin-bottom: 2rem;
+    padding: 4px 9px 4px 8px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 14px;
+    background: #FEF9EE;
+    color: #8F640C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+.summa{
+    margin-top: 1rem;
+    margin-right: 1rem;
+
+}
+
+.summa h5{
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    margin-bottom: 1rem;
+}
+
+.summa p{
+    color: #171A1F;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.summa h6{
+    color: #E8502E;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.estSub{
+     display: flex;
+     justify-content: space-between;
+}
+.esDis{
+    display: flex;
+    justify-content: space-between;
+}
+.esFee{
+    display: flex;
+    justify-content: space-between;
+}
+
+.esTotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.estiloBtnPayment{
+    border-radius: 26px;
+    height: 3rem;
+    width: 20rem;
+    align-self: center;
+    margin-top: 0.8rem;
+    border: 1px;
+    font-weight: 400;
+    background-color: #0D554A;;
+    border-style: solid;
+    color: #FFFFFF;
+    font-size: 18px;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
 }
 
 /* seccion You make Option*/
 .productos2{
     overflow: hidden;
     margin-top: 3rem;
+    margin-bottom: 5rem;
     /* justify-content: space-between; */
     
 }
 .productos2 p{
-    padding-top: 0%;
+    padding-top: 1rem;
     font-family: "manrope";
     color: #171A1F;
     font-weight: 400;
@@ -120,6 +425,7 @@ border-radius: 2px;
     Width:100%;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
+
 }
 .fotos1{
     display: flex;
@@ -135,7 +441,9 @@ border-radius: 0px 0px 15px 15px;
  }
  .fotos2{
     display: flex;
-    margin-left: 15rem;
+    margin-left: 9rem;
+    margin-bottom: 5rem;
+
 }
 .fotos2 img{
     border-top: 50px;

@@ -1,128 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/payment.css" />
-    <title>Order Summary</title>
-</head>
+    <title>Payment</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="header-top">
+        <h2 class="titulo-header">Darling</h2>
+        <nav>
+          <button class="listacontenido">Home</button>
+          <button class="listacontenido">Shop</button>
+          <button class="listacontenido">Collections</button>
+          <button class="listacontenido">About</button>
+          <button class="listacontenido">Contact</button>
+          <button class="listacontenido">
+            <img src="../Assets/perfil.png" alt="icocno-perfil" />
+          </button>
+          <button class="listacontenido">
+            <img src="../Assets/carrito.png" alt="carro" />
+          </button>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="contGeneral">
+
+        <!--Order Summary-->
+        <div class="contenedor-orderSummary">
+          <div class="tituloO">
+            <h2>Order Summary</h2>
+          </div>
+          <div class="cont-order-img">
+
+          <div class="conttLux">
+            <div>
+              <img src="../Assets/imgPayment1.png" alt="dimension1" />
+            </div>
+            <div>
+              <h2>Luxury Charms Ring</h2>
+              <p>Code: 78205</p>
+            </div>
+
+            <div class="propSummary">
+              <h2>$620.73</h2>
+            </div>
+
+            <div class="propSummary">
+              <img src="../Assets/caneca.png" alt="dimension3" />
+            </div>
+          </div>
+
+          <div class="conttExq">
+            <div>
+              <img src="../Assets/imgPayment2.png" alt="dimension1" />
+            </div>
+            <div >
+              <h2>Exquesite Earrings</h2>
+              <p >Code: 92701</h2>
+            </div>
+
+            <div class="propSummary">
+              <h2>$125.28</h2>
+            </div>
+
+            <div class="propSummary">
+              <img src="../Assets/caneca.png" alt="dimension3" />
+            </div>
+          </div>
+          <div class="conttDeli">
+            <div>
+              <img src="../Assets/imgPayment3.png" alt="dimension1" />
+            </div>
+            <div >
+              <h2>Delights Earrings</h2>
+              <p>Code: 78201</h2>
+            </div>
+
+            <div class="propSummary">
+              <h2>$327.71</h2>
+            </div>
+
+            <div class="propSummary">
+              <img src="../Assets/caneca.png" alt="dimension3" />
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!--Payment Method-->
+
+        <div class="contenedorPayment">
+          <h2>Payment Method</h2>
+          <div class="txtChange">
+            <p>Change payment methods</p>
+          </div>
+       
+
+          <div class="tarjetaM">
+                <div class="conMc">
+                  <img src="../Assets/mastercard.png" alt="Mastercard" />
+                  <p>Mastercard</p>
+                </div>
+                
+                <div>
+                  <p>****5987</p>
+                </div>
+                
+          </div>
 
 
-<body>
-  <header>
-    <section class="header-top">
-      <h2 class="titulo-header">Darling</h2>
-      <nav>
-        <button class="listacontenido">Home</button>
-        <button class="listacontenido">Shop</button>
-        <button class="listacontenido">Collections</button>
-        <button class="listacontenido">About</button>
-        <button class="listacontenido">Contact</button>
-        <button class="listacontenido">
-          <img src="../Assets/perfil.png" alt="icocno-perfil" />
-        </button>
-        <button class="listacontenido">
-          <img src="../Assets/carrito.png" alt="carro" />
-        </button>
-      </nav>
-    </section>
-  </header>
+          <p class="txtVS">Voucher</p>
 
-  <section class="contenedor-orderSummary">
-    <div>
+          <div class="inputVoucher">
+            <div>
+              <input class="estiloInputV" type="text" placeholder="$15 OFF" />
+            </div>
+            <div >
+              <button class="btnApply">Apply</button>
+            </div>
+          </div>
 
-      <div class="cont-order-img">
-        <h2>Order Summary</h2>
-        <img src="../Assets/ring-luxury.png" alt="dimension1" />
-        <img src="../Assets/Image 1 (1).png"  alt="dimension2" />
-        <img src="../Assets/delights.png" alt="dimension3" />
-      </div>
+          <button class="classOff">$15 Off</button>
 
-      <div>
-        <p>Luxury Charms Ring</p>
-        <p>Code: 78205</p>
-      </div>
+          <p class="txtVS">Summary</p>
+          <div class="summa">
 
-    </div>
-  </section>
+            <div class="estSub">
+              <div >
+                <h5>Subtotal</h5>
+              </div>
+              <div>
+                <p>$1073.72</p>
+              </div>
+            </div>
 
- <!--Sección You Make Also Like-->
- <section class="productos2">
-  <div class="comprar2contenedor">
-    <div class="comprar2">
-      <h3>You make also like</h3>
-    </div>
-  </div>
-  <section class="fotos2">
-    <div class="cartas2">
-      <img src="../Assets/shimmering-stones.png" alt="container1" />
-      <h2>Shimmering Ringe</h2>
-      <p>$168.76</p>
-    </div>
-    <div class="cartas2">
-      <img src="../Assets/exquisite-ornaments.png" alt="container2" />
-      <h2>Exquisite Earrings</h2>
-      <p>$125.28</p>
-    </div>
-    <div class="cartas2">
-      <img src="../Assets/elegance-grace.png" alt="container3" />
-      <h2>Elegance Earrings</h2>
-      <p>$620.73</p>
-    </div>
-    <div class="cartas2">
-      <img src="../Assets/luxury-cha.png" alt="container3" />
-      <h2>Elegance Earrings</h2>
-      <p>$620.73</p>
-    </div>
-  </section>
-</section>
+           
+              <div class="esDis">
+                <div>
+                  <h5>Discount</h5>
+                </div>
+                <div>
+                  <p>-$15</p>
+                </div>
 
-      <!--Sección FOOTER-->
+              </div>
 
-<footer>
-  <div class="darling-footer">
-    <div class="darlingFooterContainer">
-      <div class="darling-title-footer">
-        <h2 class="tituloDarlingFooter">Darling</h2>
-      </div>
-      <div class="navColumna1Footer">
-        <p>Shop</p>
-        <p>Collections</p>
-        <p>About</p>
-      </div>
-      <div class="navColumna2Footer">
-        <p>Contact</p>
-        <p>Privacy</p>
-        <p>Terms</p>
-      </div>
-      <div class="subscribeAndShare">
-        <h2 class="tituloSubscribeFooter">Subscribe to our newsletter</h2>
-        <p class="parrafoSubscribeFooter">
-          For product announcements and exclusive insights
-        </p>
-        <div class="contenedorInputBusqueda">
-          <input
-            class="inputBusqueda"
-            type="text"
-            placeholder="         Input your email"
-          />
-          <button class="botonSubscribe">Subscribe</button>
+              <div class="esFee">
+                <div>
+                  <h5>Fee</h5>
+                </div>
+                <div>
+                  <p>$0</p>
+                </div>
+              </div>
+
+              <div class="esTotal">
+                <div>
+                  <h5>Total</h5>
+                </div>
+                <div>
+                  <h6>$1058.72</h6>
+                </div>
+
+              </div>
+
+          </div>
+          <button class="estiloBtnPayment">Proceed to payment</button>
+        </div>
+      </section>
+
+      <!--Sección You Make Also Like-->
+      <section class="productos2">
+        <div class="comprar2contenedor">
+          <div class="comprar2">
+            <h3>You make also like</h3>
+          </div>
+        </div>
+        <section class="fotos2">
+          <div class="cartas2">
+            <img src="../Assets/shimmering-stones.png" alt="container1" />
+            <h2>Shimmering Ringe</h2>
+            <p>$168.76</p>
+          </div>
+          <div class="cartas2">
+            <img src="../Assets/exquisite-ornaments.png" alt="container2" />
+            <h2>Exquisite Earrings</h2>
+            <p>$125.28</p>
+          </div>
+          <div class="cartas2">
+            <img src="../Assets/elegance-grace.png" alt="container3" />
+            <h2>Elegance Earrings</h2>
+            <p>$620.73</p>
+          </div>
+          <div class="cartas2">
+            <img src="../Assets/luxury-cha.png" alt="container3" />
+            <h2>Elegance Earrings</h2>
+            <p>$620.73</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!--Sección FOOTER-->
+
+    <footer>
+      <div class="darling-footer">
+        <div class="darlingFooterContainer">
+          <div class="darling-title-footer">
+            <h2 class="tituloDarlingFooter">Darling</h2>
+          </div>
+          <div class="navColumna1Footer">
+            <p>Shop</p>
+            <p>Collections</p>
+            <p>About</p>
+          </div>
+          <div class="navColumna2Footer">
+            <p>Contact</p>
+            <p>Privacy</p>
+            <p>Terms</p>
+          </div>
+          <div class="subscribeAndShare">
+            <h2 class="tituloSubscribeFooter">Subscribe to our newsletter</h2>
+            <p class="parrafoSubscribeFooter">
+              For product announcements and exclusive insights
+            </p>
+            <div class="contenedorInputBusqueda">
+              <input
+                class="inputBusqueda"
+                type="text"
+                placeholder="         Input your email"
+              />
+              <button class="botonSubscribe">Subscribe</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    <div class="contenedorFooter">
-      <p class="parrafoContenedorFooter">© 2022 Brand, Inc.</p>
-    </div>
-    <div class="redesSocialesLogos">
-      <img src="../Assets/logo_twitter.png" alt="Twitter" />
-      <img src="../Assets/logo_fb.png" alt="Facebook" />
-      <img src="../Assets/logo_link.png" alt="Linkedin" />
-      <img src="../Assets/logo_youtube.png" alt="YouTube" />
-    </div>
-  </div>
-</footer> 
-</body>
+      <div class="footer">
+        <div class="contenedorFooter">
+          <p class="parrafoContenedorFooter">© 2022 Brand, Inc.</p>
+        </div>
+        <div class="redesSocialesLogos">
+          <img src="../Assets/logo_twitter.png" alt="Twitter" />
+          <img src="../Assets/logo_fb.png" alt="Facebook" />
+          <img src="../Assets/logo_link.png" alt="Linkedin" />
+          <img src="../Assets/logo_youtube.png" alt="YouTube" />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
