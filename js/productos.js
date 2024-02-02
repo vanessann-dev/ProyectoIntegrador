@@ -1,3 +1,5 @@
+// Entrega tercer sprint
+
 // primer punto
 // Declarar una lista de los productos con los 
 // siguientes datos: id, nombre, código, precio 
@@ -19,7 +21,7 @@ const productos = [
         codigo: 12345,
         precioUnitario: '168.76',
         tipoDeAccesorio: tipoDeAccesorio.collar,
-        imagenes: "Assets/Image 1.png",
+        imagenes: "../Assets/Luxury Gems Necklace.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 20,
         stockPorColor: {
@@ -34,7 +36,7 @@ const productos = [
         codigo: 22345,
         precioUnitario: '125.28',
         tipoDeAccesorio: tipoDeAccesorio.arete,
-        imagenes: "Assets/Image 1 (1).png",
+        imagenes: "../Assets/Exquisite Earrings.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 23,
         stockPorColor: {
@@ -49,7 +51,7 @@ const productos = [
         codigo: 32345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.collar,
-        imagenes: "Assets/Image 1 (2).png",
+        imagenes: "../Assets/Image 1 (2).png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 23,
         stockPorColor: {
@@ -64,7 +66,7 @@ const productos = [
         codigo: 42345,
         precioUnitario: '168.76',
         tipoDeAccesorio: tipoDeAccesorio.collar,
-        imagenes: "Assets/Luxury Gems Necklace.png",
+        imagenes: "../Assets/Luxury Gems Necklace.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 38,
         stockPorColor: {
@@ -79,7 +81,7 @@ const productos = [
         codigo: 52345,
         precioUnitario: '125.28',
         tipoDeAccesorio: tipoDeAccesorio.brazalete,
-        imagenes: "Assets/Aurora Ring.png",
+        imagenes: "../Assets/Aurora Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 24,
         stockPorcolor: {
@@ -94,7 +96,7 @@ const productos = [
         codigo: 62345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.collar,
-        imagenes: "Assets/Reflections Necklace.png",
+        imagenes: "../Assets/Reflections Necklace.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 22,
         stockPorColor: {
@@ -109,7 +111,7 @@ const productos = [
         codigo: 72345,
         precioUnitario: '327.71',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Dreamy Infinity Ring.png",
+        imagenes: "../Assets/Dreamy Infinity Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 78,
         stockPorColor: {
@@ -180,7 +182,7 @@ const productos = [
         codigo: 82345,
         precioUnitario: '168.76',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Opulent Jewels Ring.png",
+        imagenes: "../Assets/Opulent Jewels Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 92,
         stockPorColor: {
@@ -251,7 +253,7 @@ const productos = [
         codigo: 92345,
         precioUnitario: '125.28',
         tipoDeAccesorio: tipoDeAccesorio.arete,
-        imagenes: "Assets/Serene Solitaire Earrings.png",
+        imagenes: "../Assets/Serene Solitaire Earrings.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 21,
         stockPorColor: {
@@ -266,7 +268,7 @@ const productos = [
         codigo: 13345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.arete,
-        imagenes: "Assets/Timeless Halo Earrings.png",
+        imagenes: "../Assets/Timeless Halo Earrings.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 29,
         stockPorColor: {
@@ -281,7 +283,7 @@ const productos = [
         codigo: 14345,
         precioUnitario: '327.71',
         tipoDeAccesorio: tipoDeAccesorio.arete,
-        imagenes: "Assets/Exquisite Earrings.png",
+        imagenes: "../Assets/Exquisite Earrings.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 17,
         stockPorColor: {
@@ -296,7 +298,7 @@ const productos = [
         codigo: 15345,
         precioUnitario: '168.76',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Timeless Elegance Ring.png",
+        imagenes: "../Assets/Timeless Elegance Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 94,
         stockPorColor: {
@@ -367,7 +369,7 @@ const productos = [
         codigo: 16345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Luxury Charms Ring.png",
+        imagenes: "../Assets/Luxury Charms Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 95,
         stockPorColor: {
@@ -438,7 +440,7 @@ const productos = [
         codigo: 17345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Blissful Bloom Ring.png",
+        imagenes: "../Assets/Blissful Bloom Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 110,
         stockPorColor: {
@@ -509,7 +511,7 @@ const productos = [
         codigo: 18345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Sparkling Ring.png",
+        imagenes: "../Assets/Sparkling Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 105,
         stockPorColor: {
@@ -580,7 +582,7 @@ const productos = [
         codigo: 19345,
         precioUnitario: '620.73',
         tipoDeAccesorio: tipoDeAccesorio.anillo,
-        imagenes: "Assets/Glimmering Ring.png",
+        imagenes: "../Assets/Glimmering Ring.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 90,
         stockPorColor: {
@@ -651,7 +653,7 @@ const productos = [
         codigo: 19345,
         precioUnitario: '327.71',
         tipoDeAccesorio: tipoDeAccesorio.arete,
-        imagenes: "Assets/delights.png",
+        imagenes: "../Assets/delights.png",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         cantidadTotal: 12,
         stockPorColor: {
@@ -662,88 +664,338 @@ const productos = [
 
 ];
 
-// const primerProducto = productos[0];
-// console.log("Nombre del primer producto:", primerProducto.nombre);
-// console.log("Precio del primer producto:", primerProducto.precioUnitario);
-// console.log("Stock de plata del primer producto:", primerProducto.stockPorColor.plata);
+// // const primerProducto = productos[0];
+// // console.log("Nombre del primer producto:", primerProducto.nombre);
+// // console.log("Precio del primer producto:", primerProducto.precioUnitario);
+// // console.log("Stock de plata del primer producto:", primerProducto.stockPorColor.plata);
 
-//segundo punto
-//Escribir una función que reciba como parámetros un array 
-//de productos y el nombre de un tipo de producto, que 
-//utilice la función de array que permita filtrar la lista por la
-//categoría o tipo y devuelva el array resultante. Luego, llamar la función pasándole como
-//argumentos la lista de productos declarado en el ítem 
-//anterior y cualquier tipo de accesorio que exista en 
-//la lista y, por último, mostrar el resultado en la consola del navegador.
+// //segundo punto
+// //Escribir una función que reciba como parámetros un array 
+// //de productos y el nombre de un tipo de producto, que 
+// //utilice la función de array que permita filtrar la lista por la
+// //categoría o tipo y devuelva el array resultante. Luego, llamar la función pasándole como
+// //argumentos la lista de productos declarado en el ítem 
+// //anterior y cualquier tipo de accesorio que exista en 
+// //la lista y, por último, mostrar el resultado en la consola del navegador.
+
+// //filtrando por collar
+
+// const filtrarProductoCollar = (productos, tipoDeAccesorio) => {
+//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
+//     console.log("Lista de productos actualizado", productosFiltrados)
+// }
+
+// // document.getElementById('probandoCollar').onclick = function() {
+// //     filtrarProductoCollar(productos, "collar");
+// //   };
+
+//   // filtrando por anillo
+
+//   const filtrarProductoAnillo = (productos, tipoDeAccesorio) => {
+//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
+//     console.log("Lista de productos actualizado", productosFiltrados)
+// }
+
+// // document.getElementById('probandoAnillo').onclick = function() {
+// //     filtrarProductoAnillo(productos, "anillo");
+// //   };
+
+// // filtrando por brazalete
+
+// const filtrarProductoBrazelate = (productos, tipoDeAccesorio) => {
+//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
+//     console.log("Lista de productos actualizado", productosFiltrados)
+// }
+
+// // document.getElementById('probandoBrazalete').onclick = function() {
+// //     filtrarProductoBrazalete(productos, "brazalete");
+// //   };
+
+//   //filtrando por arete
+
+//   const filtrarProductoArete = (productos, tipoDeAccesorio) => {
+//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
+//     console.log("Lista de productos actualizado", productosFiltrados)
+// }
+
+// // document.getElementById('probandoArete').onclick = function() {
+// //     filtrarProductoArete(productos, "arete");
+// //   }
+
+// //tercer punto
+// //Escribir una función que realice la búsqueda de productos 
+// //por nombre, reciba como parámetro un array de productos y 
+// //un término de búsqueda (es decir, una cadena de caracteres)
+// //y retorne un array con todos los productos cuyos nombres 
+// //contengan los caracteres del segundo parámetro. Luego, 
+// //llamar la función pasándole como argumentos datos de 
+// //prueba y mostrar el resultado en la consola del navegador.
+
+// const busquedaProductoPorNombre = (productos, termino) => {
+//     return productos.filter(producto => producto.nombre.toLowerCase().includes(termino.toLowerCase()));
+// }
+ 
+//  const productoEncontrado = busquedaProductoPorNombre(productos, "RING");
+//     console.log(productoEncontrado)
+
+
+// //cuarto punto
+// //Crear una función que ordene un array de productos por 
+// //precios de manera ascendente y descendente y retorne el 
+// //array resultante. Ejecutar la función y mostrar el 
+// //resultado en consola.
+
+// const ordenarProductosPorPrecio =(productos, orden) =>{
+//     const copiaProductos = [...productos];
+
+//     if (orden === "ascendente") {
+//         copiaProductos.sort((a, b) => a.precioUnitario - b.precioUnitario);   
+//     } else if (orden ==="descendente"){
+//         copiaProductos.sort((a, b) => b.precioUnitario - a.precioUnitario);
+
+//     } else {
+//         console.log("Error: El parámetro 'orden' debe ser 'ascendente' o 'descendente'");
+
+//     }
+
+//     return copiaProductos; 
+// }
+
+// // Llamar a la función para ordenar productos de manera ascendente
+// const productosAscendente = ordenarProductosPorPrecio(productos, "ascendente");
+// console.log("Productos ordenados de manera ascendente:", productosAscendente);
+
+// // Llamar a la función para ordenar productos de manera descendente
+// const productosDescendente = ordenarProductosPorPrecio(productos, "descendente");
+// console.log("Productos ordenados de manera descendente:", productosDescendente);
+
+
+// //Quinto punto
+// //Crear una función que calcule el total a pagar de una 
+// //compra, reciba como parámetros un array de productos 
+// //donde cada producto, tenga como propiedades la cantidad 
+// //y precio unitario del producto y devuelva el valor que 
+// //corresponda a la sumatoria de la cantidad por el precio 
+// //de cada producto. Ejecutar la función con datos de prueba y
+// //mostrar el resultado en la consola del navegador.
+
+// //prueba 1
+// const productosCompra = [
+//     {
+//         cantidad: 2,
+//         precioUnitario: 168.76,
+//     },
+//     {
+//         cantidad: 3,
+//         precioUnitario: 620.18,
+//     },
+//     {
+//         cantidad: 1,
+//         precioUnitario: 128.25,
+//     },
+// ]
+
+// const totalAPagar = (productos) => {
+//     const totalCompra = Number(productos.reduce((total, producto) => {
+//         return total + (producto.cantidad * producto.precioUnitario);
+//     }, 0));
+
+//     return totalCompra;
+// }
+
+// const totalPagar = totalAPagar(productosCompra);
+// console.log("Total a pagar:", totalPagar);
+
+
+
+//Entrega cuarto sprint
+
+const listarProductos = () => {
+    const contenedor = document.getElementById("listaProductos")
+    // console.log(contenedor)
+    let nuevoHtml = ""
+    productos.forEach(item => {
+        nuevoHtml += `<div class="target1">
+        <img
+          src="${item.imagenes}"
+          alt="${item.nombre}"
+        />
+        <h2>${item.nombre}</h2>
+        <p> ${item.precioUnitario}</p>
+      </div>`
+    });
+    contenedor.innerHTML = nuevoHtml
+}
+listarProductos()
+
+
+
+
+
+
+
+
+
+// buscar producto por nombre
+
+const filtroPorNombre = document.getElementById("filtroPorNombre");
+const resultadofiltro = document.getElementById("resultadofiltro");
+
+const handlesearch = () => {
+    const busquedatermino = filtroPorNombre.value.toLowerCase();
+    const elementosFiltrados = productos.filter((item) => item.nombre.toLocaleLowerCase().startsWith(busquedatermino));
+
+//     resultadofiltro.innerHTML = `<div class="target1">
+//     <img
+//       src="${item.imagenes}"
+//       alt="${item.nombre}"
+//     />
+//     <h2>${item.nombre}</h2>
+//     <p> ${item.precioUnitario}</p>
+//   </div>`;
+
+    
+
+    elementosFiltrados.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item.name;
+        resultadofiltro.appendChild(li);
+    })
+};
+
+filtroPorNombre.addEventListener("input", handlesearch);
+
+console.log(resultadofiltro)
+
+    
+// filtrar por categoria --BOTONES--
+
+//filtrar por todo
+
+
+const printProductos = (productos, contenedor) => {
+   contenedor.innerHTML = '';
+   productos.forEach(item => {
+    const div = document.createElement('div');
+    div.classList.add('target1')
+    div.innerHTML = `<div class="target1">
+    <img
+      src="${item.imagenes}"
+      alt="${item.nombre}"
+    />
+    <h2>${item.nombre}</h2>
+    <p> ${item.precioUnitario}</p>
+  </div>`;
+  contenedor.appendChild(div);
+   })
+    
+}
+const listaProductos = document.getElementById("listaProductos")
+
+const bTodo = document.getElementById("todo");
+const bAnillo = document.getElementById("anillo");
+const bBrazalete = document.getElementById("brazalete");
+const bCollar = document.getElementById("collar");
+const bAretes = document.getElementById("arete");
+
+//Filtrado
+
+const bFiltrado = [bTodo, bAnillo, bBrazalete, bCollar, bAretes];
+
+bFiltrado.forEach(button => {
+    button.addEventListener("click", (event) => {
+
+
+        let productosFiltrados = [];
+
+        if (button.id === "todo") {
+            productosFiltrados = productos;
+        }
+        else {
+            productosFiltrados = productos.filter(
+                (Producto) => Producto.tipoDeAccesorio === button.id);
+        };
+
+
+        printProductos(productosFiltrados, listaProductos);
+
+        console.log(productosFiltrados)
+    });
+});
+
+
+
+
+
+
+
+const filtrarTodosLosProductos = (productos, tipoDeAccesorio) => {
+    const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
+    console.log("Lista de productos actualizado", productosFiltrados)
+}
+
+// document.getElementById('filtroTodo').onClick = function() {
+//     filtrarTodosLosProductos(productoFiltrado);
+//   };
+
 
 //filtrando por collar
 
-const filtrarProductoCollar = (productos, tipoDeAccesorio) => {
+const filtrarProductoCollar1 = (productos, tipoDeAccesorio) => {
     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
     console.log("Lista de productos actualizado", productosFiltrados)
 }
 
-document.getElementById('probandoCollar').onclick = function() {
-    filtrarProductoCollar(productos, "collar");
-  };
+// document.getElementById('filtroCollar').onclick = function() {
+//     filtrarProductoCollar(productos, "collar");
+//   };
 
   // filtrando por anillo
 
-  const filtrarProductoAnillo = (productos, tipoDeAccesorio) => {
+  const filtrarProductoAnillo1 = (productos, tipoDeAccesorio) => {
     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
     console.log("Lista de productos actualizado", productosFiltrados)
 }
 
-document.getElementById('probandoAnillo').onclick = function() {
-    filtrarProductoAnillo(productos, "anillo");
-  };
+// document.getElementById('filtroAnillo').onclick = function() {
+//     filtrarProductoAnillo(productos, "anillo");
+//   };
 
 // filtrando por brazalete
 
-const filtrarProductoBrazelate = (productos, tipoDeAccesorio) => {
+const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
     console.log("Lista de productos actualizado", productosFiltrados)
 }
 
-document.getElementById('probandoBrazalete').onclick = function() {
-    filtrarProductoAnillo(productos, "brazalete");
-  };
+
+// document.getElementById('filtroBrazalete').onclick = function() {
+//     filtrarProductoBrazelate1(productos, "brazalete");
+//   };
 
   //filtrando por arete
 
-  const filtrarProductoArete = (productos, tipoDeAccesorio) => {
+  const filtrarProductoArete1 = (productos, tipoDeAccesorio) => {
     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
     console.log("Lista de productos actualizado", productosFiltrados)
 }
 
-document.getElementById('probandoArete').onclick = function() {
-    filtrarProductoAnillo(productos, "arete");
-  }
-
-//tercer punto
-//Escribir una función que realice la búsqueda de productos 
-//por nombre, reciba como parámetro un array de productos y 
-//un término de búsqueda (es decir, una cadena de caracteres)
-//y retorne un array con todos los productos cuyos nombres 
-//contengan los caracteres del segundo parámetro. Luego, 
-//llamar la función pasándole como argumentos datos de 
-//prueba y mostrar el resultado en la consola del navegador.
-
-const busquedaProductoPorNombre = (productos, termino) => {
-    return productos.filter(producto => producto.nombre.toLowerCase().includes(termino.toLowerCase()));
-}
- 
- const productoEncontrado = busquedaProductoPorNombre(productos, "RING");
-    console.log(productoEncontrado)
+// document.getElementById('filtroArete').onclick = function() {
+//     filtrarProductoArete1(productos, "arete");
+//   }
 
 
-//cuarto punto
-//Crear una función que ordene un array de productos por 
-//precios de manera ascendente y descendente y retorne el 
-//array resultante. Ejecutar la función y mostrar el 
-//resultado en consola.
 
-const ordenarProductosPorPrecio =(productos, orden) =>{
+
+
+
+
+
+//filtrar por precio
+
+// crear un evento dom que al hacer click en una opcion llame a la funcion correspondiente
+
+const ordenarProductosPorPrecio1 =(productos, orden) =>{
     const copiaProductos = [...productos];
 
     if (orden === "ascendente") {
@@ -759,48 +1011,16 @@ const ordenarProductosPorPrecio =(productos, orden) =>{
     return copiaProductos; 
 }
 
+
 // Llamar a la función para ordenar productos de manera ascendente
-const productosAscendente = ordenarProductosPorPrecio(productos, "ascendente");
-console.log("Productos ordenados de manera ascendente:", productosAscendente);
+const productosAscendente1 = ordenarProductosPorPrecio1(productos, "ascendente");
+console.log("Productos ordenados de manera ascendente:", productosAscendente1);
 
 // Llamar a la función para ordenar productos de manera descendente
-const productosDescendente = ordenarProductosPorPrecio(productos, "descendente");
-console.log("Productos ordenados de manera descendente:", productosDescendente);
+const productosDescendente1 = ordenarProductosPorPrecio1(productos, "descendente");
+console.log("Productos ordenados de manera descendente:", productosDescendente1);
 
 
-//Quinto punto
-//Crear una función que calcule el total a pagar de una 
-//compra, reciba como parámetros un array de productos 
-//donde cada producto, tenga como propiedades la cantidad 
-//y precio unitario del producto y devuelva el valor que 
-//corresponda a la sumatoria de la cantidad por el precio 
-//de cada producto. Ejecutar la función con datos de prueba y
-//mostrar el resultado en la consola del navegador.
-
-//prueba 1
-const productosCompra = [
-    {
-        cantidad: 2,
-        precioUnitario: 168.76,
-    },
-    {
-        cantidad: 3,
-        precioUnitario: 620.18,
-    },
-    {
-        cantidad: 1,
-        precioUnitario: 128.25,
-    },
-]
-
-const totalAPagar = (productos) => {
-    const totalCompra = Number(productos.reduce((total, producto) => {
-        return total + (producto.cantidad * producto.precioUnitario);
-    }, 0));
-
-    return totalCompra;
-}
-
-const totalPagar = totalAPagar(productosCompra);
-console.log("Total a pagar:", totalPagar);
-
+// document.getElementById('filtroPrecio').onclick = function() {
+//     filtrarProductoArete(productos, "");
+//   }
