@@ -49,6 +49,35 @@ header{
     margin-left: 8%;
 }
 
+#btnCart {
+    cursor: pointer;
+}
+
+.modalCart {    
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #05050549;
+    /* visibility: hidden; */
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+
+.modalCart section {    
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
 .navegacion1{
     display: flex;
     justify-content: space-between;
@@ -153,7 +182,7 @@ header{
     color: #0D554A;
     /* margin-top: 5%; */
     font-family: "manrope";
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     height: 1.5rem;
     width: 10rem;
 }
@@ -176,9 +205,9 @@ header{
     background-color: transparent;
     font-family: "manrope";
     border: none;
-    font-size: 0.8rem;
     height: 3rem;
-    width: 6rem;
+    width: 8rem;
+    font-size: 14px;
 }
 
 .desplegable{
@@ -191,7 +220,12 @@ header{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
-    /* padding: 10px; */
+    padding: 10px;
+    padding-top: 4%;
+}
+
+#listaProductos p{
+    font-family: "manrope";
 }
 
 .ptoductos-primer-linea{
@@ -199,30 +233,38 @@ header{
     justify-content: space-between;
     width: 100%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    
 }
 
 .target1 img{
     max-width: 100%;
     border-top: 50px;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 380px;
+    width: 276px;
+
  }
 
 .target1{
     background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
-    margin-right: 2%;
+    margin-bottom: 3%;
  }
 
  .target1-ultima{
     background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
+    height: 380px;
+    width: 276px;
  }
 
  .target1-ultima img{
     max-width: 100%;
     border-top: 50px;
     border-radius: 5px 5px 0px 0px;
+    height: 380px;
+    width: 276px;
+}
  }
 
  .ptoductos-primer-linea h2{
@@ -233,6 +275,7 @@ header{
     Width:100%;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+   
 }
 
  .ptoductos-primer-linea p{
