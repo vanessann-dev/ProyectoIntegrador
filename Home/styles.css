@@ -56,6 +56,35 @@ nav{
     font-weight: 1;
 }
 
+#btnCart {
+    cursor: pointer;
+}
+
+.modalCart {    
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #05050549;
+    /* visibility: hidden; */
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+
+.modalCart section {    
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
 .listacontenido{
     display: flex;
     justify-content: space-between;

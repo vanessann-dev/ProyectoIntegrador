@@ -552,10 +552,6 @@ nav{
     border-radius: 8px;
 }
 
-.target-container{
-
-}
-
 .target-img-container{
     
     border-radius: 8px 0px 0px 8px ;
@@ -580,8 +576,7 @@ nav{
 margin-top: 1rem;
 margin-bottom: 0.1rem;
 }
-.target-texto3{
-}
+
 .button-people{
     height: 3.2rem;
     margin-top: 2.85rem;
