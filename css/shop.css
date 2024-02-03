@@ -254,12 +254,17 @@ header{
  .target1-ultima{
     background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
+    height: 380px;
+    width: 276px;
  }
 
  .target1-ultima img{
     max-width: 100%;
     border-top: 50px;
     border-radius: 5px 5px 0px 0px;
+    height: 380px;
+    width: 276px;
+}
  }
 
  .ptoductos-primer-linea h2{
