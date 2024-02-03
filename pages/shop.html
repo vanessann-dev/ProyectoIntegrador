@@ -17,14 +17,14 @@
           <a href="../pages/shop.html"
             ><button class="listacontenido1">Shop</button></a
           >
-          <button class="listacontenido1">Collections</button>
-          <button class="listacontenido1">About</button>
-          <button class="listacontenido1">Contact</button>
+          <a href="../pages/shop.html"><button class="listacontenido1">Collections</button></a>
+          <a href=""><button class="listacontenido1">About</button></a>
+          <a href=""><button class="listacontenido1">Contact</button></a>
           <button class="listacontenido1">
             <img src="../Assets/iconoi perfil 1.png" alt="icocno-perfil" />
           </button>
           <button class="listacontenido1">
-            <img src="../Assets/carrito.png" alt="carrito" />
+            <img id="btnCart" src="../Assets/carrito.png" alt="carrito" />
           </button>
         </nav>
         <div class="menu-hamburger-shop">
@@ -62,8 +62,8 @@
           </div>
         </div>
       </section>
-      <div class="contenedorImagenesJs">
-        <div id="listaProductos" class="ptoductos-primer-linea">
+      <div id="listaProductos" class="contenedorImagenesJs">
+        <div class="ptoductos-primer-linea">
           <div class="target1">
             <img
               src="../Assets/Luxury Gems Necklace.png"
@@ -94,7 +94,7 @@
             <p>$327.71</p>
           </div>
         </div>
-        <!-- <div class="ptoductos-segunda-linea">
+        <div class="ptoductos-segunda-linea">
           <div class="target2">
             <img
               src="../Assets/Opulent Jewels Ring.png"
@@ -151,7 +151,7 @@
               <h2>Sparkling Ring</h2>
               <p>$620.73</p>
             </div>
-          </div> -->
+          </div>
           <div>
             <div id="listaProductos2" class="target3">
               <img
@@ -266,6 +266,13 @@
         </div>
       </div>
     </footer>
+    <div class="modalCart hidden">
+      <section>
+        <button id="closeModal">X</button>
+        <span>Contenido del modal</span>
+      </section>
+    </div>
+    <script src="../js/modalCart.js"></script>
     <script src="../js/productos.js"></script>
   </body>
 </html>
