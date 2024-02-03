@@ -832,7 +832,6 @@ listarProductos()
 // buscar producto por nombre
 
 const filtroPorNombre = document.getElementById("filtroPorNombre");
-const resultadofiltro = document.getElementById("resultadofiltro");
 
 const handlesearch = () => {
     const busquedatermino = filtroPorNombre.value.toLowerCase();
@@ -848,19 +847,12 @@ const handlesearch = () => {
 //   </div>`;
 
     
-
-    elementosFiltrados.forEach((item) => {
-        printProductos()
-        
-        // const li = document.createElement("li");
-        // li.textContent = item.name;
-        // resultadofiltro.appendChild(li);
-    })
 };
 
 filtroPorNombre.addEventListener("input", handlesearch);
 
-console.log(resultadofiltro)
+// console.log(resultadofiltro)
+
 
     
 // filtrar por categoria --BOTONES--
@@ -869,11 +861,9 @@ console.log(resultadofiltro)
 
 
 const printProductos = (productos, contenedor) => {
-   contenedor.innerHTML = '';
+    let almacenador = "";
    productos.forEach(item => {
-    const div = document.createElement('div');
-    div.classList.add('target1')
-    div.innerHTML = `<div class="target1">
+    almacenador += `<div class="target1">
     <img
       src="${item.imagenes}"
       alt="${item.nombre}"
@@ -881,9 +871,9 @@ const printProductos = (productos, contenedor) => {
     <h2>${item.nombre}</h2>
     <p> ${item.precioUnitario}</p>
   </div>`;
-  contenedor.appendChild(div);
    })
-    
+   
+   contenedor.innerHTML = almacenador
 }
 const listaProductos = document.getElementById("listaProductos")
 
@@ -911,8 +901,8 @@ bFiltrado.forEach(button => {
                 (Producto) => Producto.tipoDeAccesorio === button.id);
         };
 
-
-        printProductos(productosFiltrados, listaProductos);
+        const todosLosProductos = document.getElementById("listaProductos");
+        printProductos(productosFiltrados, todosLosProductos);
 
         console.log(productosFiltrados)
     });
@@ -981,36 +971,49 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
 
 
 
-//filtrar por precio
 
-// crear un evento dom que al hacer click en una opcion llame a la funcion correspondiente
-
-const ordenarProductosPorPrecio1 =(productos, orden) =>{
-    const copiaProductos = [...productos];
-
-    if (orden === "ascendente") {
-        copiaProductos.sort((a, b) => a.precioUnitario - b.precioUnitario);   
-    } else if (orden ==="descendente"){
-        copiaProductos.sort((a, b) => b.precioUnitario - a.precioUnitario);
-
-    } else {
-        console.log("Error: El parámetro 'orden' debe ser 'ascendente' o 'descendente'");
-
+  // Función para filtrar la ropa según la opción seleccionada
+  function filtrarPorPrecio() {
+    const selector = document.getElementById("precioSelector");
+    const opcionSeleccionada = selector.value;
+    let precioFiltrado = [];
+  
+    switch (opcionSeleccionada) {
+      case "mayorAMenor":
+        precioFiltrado = productos.sort((a, b) => b.precioUnitario - a.precioUnitario);
+        break;
+      case "menorAMayor":
+        precioFiltrado = productos.sort((a, b) => a.precioUnitario - b.precioUnitario);
+        break;
+      case "0-50":
+        precioFiltrado = productos.filter(item => item.precioUnitario < 50);
+        break;
+      case "50-100":
+        precioFiltrado = productos.filter(item => item.precioUnitario >= 50 && item.precioUnitario <= 100);
+        break;
+      case "100-200":
+        precioFiltrado = productos.filter(item => item.precioUnitario > 100 && item.precioUnitario <= 200);
+        break;
     }
+    const contenedor = document.getElementById("listaProductos")
+    printProductos(precioFiltrado,contenedor)
 
-    return copiaProductos; 
-}
-
-
-// Llamar a la función para ordenar productos de manera ascendente
-const productosAscendente1 = ordenarProductosPorPrecio1(productos, "ascendente");
-console.log("Productos ordenados de manera ascendente:", productosAscendente1);
-
-// Llamar a la función para ordenar productos de manera descendente
-const productosDescendente1 = ordenarProductosPorPrecio1(productos, "descendente");
-console.log("Productos ordenados de manera descendente:", productosDescendente1);
-
-
-// document.getElementById('filtroPrecio').onclick = function() {
-//     filtrarProductoArete(productos, "");
-//   }
+    mostrarResultadosEnConsola(precioFiltrado);
+  }
+  
+  
+  // esto muestra los resultados en consola, si no hay ropa o no hay ropa del precio filtrado, entonces
+  //muestra en consola que no hay
+  function mostrarResultadosEnConsola(resultados) {
+    if (resultados.length === 0) {
+      console.log("No hay resultados para la opción seleccionada.");
+    } else {//en esta zona, por cada prenda de ropa encontrada de la opcion seleccionada, la imprime en consola
+      resultados.forEach(item => {
+        console.log(`${item.nombre}: $${item.precioUnitario}`);
+      });
+    }
+  }
+  
+  // aca obtiene la id del selectior, "change" indica que al cambiar algo en el selector
+  //se llama a la funcion de filtrado
+  document.getElementById("precioSelector").addEventListener("change", filtrarPorPrecio);
