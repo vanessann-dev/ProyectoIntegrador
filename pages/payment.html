@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/payment.css" />
+    <link rel="stylesheet" href="../css/modalCart.css">
     <title>Payment</title>
   </head>
 
@@ -12,16 +13,16 @@
       <section class="header-top">
         <h2 class="titulo-header">Darling</h2>
         <nav>
-          <button class="listacontenido">Home</button>
-          <button class="listacontenido">Shop</button>
-          <button class="listacontenido">Collections</button>
+          <a href="../Home/index.html"><button class="listacontenido">Home</button></a>
+          <a href="../pages/shop.html"><button class="listacontenido">Shop</button></a>
+          <a href="../pages/shop.html"><button class="listacontenido">Collections</button></a>
           <button class="listacontenido">About</button>
           <button class="listacontenido">Contact</button>
           <button class="listacontenido">
             <img src="../Assets/perfil.png" alt="icocno-perfil" />
           </button>
           <button class="listacontenido">
-            <img src="../Assets/carrito.png" alt="carro" />
+            <img  id="btnCart" src="../Assets/carrito.png" alt="carro" />
           </button>
         </nav>
       </section>
@@ -253,5 +254,81 @@
         </div>
       </div>
     </footer>
+    <div class="modalCart hidden">
+      <section class="contenedorModal">
+        <div class="tituloCart">
+          <h2>Your cart</h2>
+          <button id="closeModal">
+            <img src="../Assets/remove.png" alt="Cerrar" />
+          </button>
+        </div>
+        <span>
+          <div class="contenedorCompras">
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Luxury Charms Ring pequeña.png"
+                  alt="Luxury Charms Ring pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Luxury Charms Ring</h3>
+                  <p>Code: 78205</p>
+                  <p>$620.73</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Exquisite Earrings pequeña.png"
+                  alt="Exquisite Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Exquisite Earrings</h3>
+                  <p>Code: 92701</p>
+                  <p>$125.28</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Delights Earrings pequeña.png"
+                  alt="Delights Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Delights Earrings</h3>
+                  <p>Code: 78201</p>
+                  <p>$327.71</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr class="linea"/>
+            <div class="contenedorTotal">
+              <div class="compraTotal">
+                <p>Total:</p>
+                <p>$621.75</p>
+              </div>
+              <button>Continue to check out</button>
+            </div>
+          </div>
+        </span>
+      </section>
+    </div>
+    <script src="../js/modalCart.js"></script>
   </body>
 </html>

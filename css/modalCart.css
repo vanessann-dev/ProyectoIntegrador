@@ -1,0 +1,113 @@
+#btnCart {
+    cursor: pointer;
+}
+
+.modalCart {    
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #05050549;
+    /* visibility: hidden; */
+}
+
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+.modalCart section {    
+    width: 30%;
+    height: 100%;
+    background-color: white;
+     
+}
+
+.tituloCart{
+    display: flex;
+    justify-content: space-between;
+    margin: 27px 35px 15px 35px;
+}
+
+.tituloCart h2{
+    font-family: "Cormorant Garamond";
+    font-size: 3.5rem;
+    color: #0D554A;
+}
+.tituloCart button{
+    border: none;
+    background-color: transparent;
+}
+
+.tituloCart img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.contenedorCompras {
+    margin: 27px 35px 15px 35px;
+}
+
+.compras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    padding-top: 0.8rem;
+}
+
+.comprasDetalle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.comprasDetalleDescri{
+    padding-left: 1.5rem;
+    font-family: "manrope";
+    
+}
+
+.comprasDetalleDescri h3{
+    font-size: 0.9rem;
+}
+
+.comprasDetalleDescri p{
+    font-size: 0.7rem;
+}
+
+.linea{
+    margin-top: 6rem;
+}
+
+.contenedorTotal button{
+    font-family: "Manrope";
+    height: 56px;
+    width: 100%;
+    border-radius: 26px;
+    border: 1px;
+    font-weight: 200;
+    background-color: #0D554A;
+    border-style:groove;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.compraTotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compraTotal p{
+    font-size: "manrope";
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+}

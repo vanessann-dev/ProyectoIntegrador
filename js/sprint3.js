@@ -1,6 +1,7 @@
 // Entrega tercer sprint
 
 // primer punto
+
 // Declarar una lista de los productos con los 
 // siguientes datos: id, nombre, código, precio 
 // unitario, tipo de accesorio (anillo, brazalete,
@@ -670,6 +671,7 @@ console.log("Precio del primer producto:", primerProducto.precioUnitario);
 console.log("Stock de plata del primer producto:", primerProducto.stockPorColor.plata);
 
 // segundo punto
+
 // Escribir una función que reciba como parámetros un array 
 // de productos y el nombre de un tipo de producto, que 
 // utilice la función de array que permita filtrar la lista por la
@@ -723,6 +725,7 @@ document.getElementById('arete').onclick = function() {
   }
 
 // tercer punto
+
 // Escribir una función que realice la búsqueda de productos 
 // por nombre, reciba como parámetro un array de productos y 
 // un término de búsqueda (es decir, una cadena de caracteres)
@@ -740,6 +743,7 @@ const busquedaProductoPorNombre = (productos, termino) => {
 
 
 // cuarto punto
+
 // Crear una función que ordene un array de productos por 
 // precios de manera ascendente y descendente y retorne el 
 // array resultante. Ejecutar la función y mostrar el 
@@ -771,6 +775,7 @@ console.log("Productos ordenados de manera descendente:", productosDescendente);
 
 
 // Quinto punto
+
 // Crear una función que calcule el total a pagar de una 
 // compra, reciba como parámetros un array de productos 
 // donde cada producto, tenga como propiedades la cantidad 

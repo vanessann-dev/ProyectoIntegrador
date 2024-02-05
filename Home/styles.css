@@ -151,14 +151,12 @@ nav{
 }
 
 .imagen2{
-    margin-left: 18rem;
-    margin-top: 7rem;
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    z-index: 5;
     width: 16rem;
     height: 20rem;
-    margin-left: 39%;
-    margin-top: 11%;
+    margin-left: 220%;
+    margin-top: 64%;
 }
 
 .header-image-bottom {
@@ -509,9 +507,6 @@ nav{
     border-radius: 8px;
 }
 
-.target-container{
-
-}
 
 .target-img-container{
     
@@ -537,8 +532,7 @@ nav{
 margin-top: 1rem;
 margin-bottom: 0.1rem;
 }
-.target-texto3{
-}
+
 .button-people{
     height: 3.2rem;
     margin-top: 2.85rem;
