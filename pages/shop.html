@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/modalCart.css">
     <title>Darling Jewelry</title>
   </head>
   <body>
@@ -57,20 +58,19 @@
         <div>
           <div class="contenedor-filtro">
             <select id="precioSelector">
-              <option value="Sot By Price">Sot By Price</option>
+              <option value="Sort By Price">Sort By Price</option>
               <option value="mayorAMenor">De Mayor a Menor</option>
               <option value="menorAMayor">De Menor a Mayor</option>
-              <option value="0-50">Menos de $50</option>
-              <option value="50-100">$50 - $100</option>
-              <option value="100-200">$100 - $200</option>
-              x
+              <option value="0-100">Menos de $100</option>
+              <option value="100-300">$100 - $300</option>
+              <option value="300-700">$300 - $700</option>
             </select>
           </div>
         </div>
       </section>
       <div id="listaProductos" class="contenedorImagenesJs">
-        <div id="todosLosProductos" class="ptoductos-primer-linea">
-          <!-- <div class="target1">
+        <!-- <div id="todosLosProductos" class="ptoductos-primer-linea">
+          <div class="target1">
             <img
               src="../Assets/Luxury Gems Necklace.png"
               alt="Luxury Gems Necklace"
@@ -98,7 +98,7 @@
             />
             <h2>Dreamy Infinity Ring</h2>
             <p>$327.71</p>
-          </div> -->
+          </div>
         </div>
         <div class="ptoductos-segunda-linea">
           <div class="target2">
@@ -173,7 +173,7 @@
               <p>$620.73</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <section class="filtrar3">
         <nav class="navegacion3">
@@ -273,9 +273,78 @@
       </div>
     </footer>
     <div class="modalCart hidden">
-      <section>
-        <button id="closeModal">X</button>
-        <span>Contenido del modal</span>
+      <section class="contenedorModal">
+        <div class="tituloCart">
+          <h2>Your cart</h2>
+          <button id="closeModal">
+            <img src="../Assets/remove.png" alt="Cerrar" />
+          </button>
+        </div>
+        <span>
+          <div class="contenedorCompras">
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Luxury Charms Ring pequeña.png"
+                  alt="Luxury Charms Ring pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Luxury Charms Ring</h3>
+                  <p>Code: 78205</p>
+                  <p>$620.73</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Exquisite Earrings pequeña.png"
+                  alt="Exquisite Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Exquisite Earrings</h3>
+                  <p>Code: 92701</p>
+                  <p>$125.28</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Delights Earrings pequeña.png"
+                  alt="Delights Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Delights Earrings</h3>
+                  <p>Code: 78201</p>
+                  <p>$327.71</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr class="linea"/>
+            <div class="contenedorTotal">
+              <div class="compraTotal">
+                <p>Total:</p>
+                <p>$621.75</p>
+              </div>
+              <button>Continue to check out</button>
+            </div>
+          </div>
+        </span>
       </section>
     </div>
     <script src="../js/productos.js"></script>

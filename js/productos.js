@@ -657,151 +657,6 @@ const productos = [
 
 ];
 
-// // const primerProducto = productos[0];
-// // console.log("Nombre del primer producto:", primerProducto.nombre);
-// // console.log("Precio del primer producto:", primerProducto.precioUnitario);
-// // console.log("Stock de plata del primer producto:", primerProducto.stockPorColor.plata);
-
-// //segundo punto
-// //Escribir una función que reciba como parámetros un array 
-// //de productos y el nombre de un tipo de producto, que 
-// //utilice la función de array que permita filtrar la lista por la
-// //categoría o tipo y devuelva el array resultante. Luego, llamar la función pasándole como
-// //argumentos la lista de productos declarado en el ítem 
-// //anterior y cualquier tipo de accesorio que exista en 
-// //la lista y, por último, mostrar el resultado en la consola del navegador.
-
-// //filtrando por collar
-
-// const filtrarProductoCollar = (productos, tipoDeAccesorio) => {
-//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
-//     console.log("Lista de productos actualizado", productosFiltrados)
-// }
-
-// // document.getElementById('probandoCollar').onclick = function() {
-// //     filtrarProductoCollar(productos, "collar");
-// //   };
-
-//   // filtrando por anillo
-
-//   const filtrarProductoAnillo = (productos, tipoDeAccesorio) => {
-//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
-//     console.log("Lista de productos actualizado", productosFiltrados)
-// }
-
-// // document.getElementById('probandoAnillo').onclick = function() {
-// //     filtrarProductoAnillo(productos, "anillo");
-// //   };
-
-// // filtrando por brazalete
-
-// const filtrarProductoBrazelate = (productos, tipoDeAccesorio) => {
-//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
-//     console.log("Lista de productos actualizado", productosFiltrados)
-// }
-
-// // document.getElementById('probandoBrazalete').onclick = function() {
-// //     filtrarProductoBrazalete(productos, "brazalete");
-// //   };
-
-//   //filtrando por arete
-
-//   const filtrarProductoArete = (productos, tipoDeAccesorio) => {
-//     const productosFiltrados = productos.filter(productos => productos.tipoDeAccesorio === tipoDeAccesorio)
-//     console.log("Lista de productos actualizado", productosFiltrados)
-// }
-
-// // document.getElementById('probandoArete').onclick = function() {
-// //     filtrarProductoArete(productos, "arete");
-// //   }
-
-// //tercer punto
-// //Escribir una función que realice la búsqueda de productos 
-// //por nombre, reciba como parámetro un array de productos y 
-// //un término de búsqueda (es decir, una cadena de caracteres)
-// //y retorne un array con todos los productos cuyos nombres 
-// //contengan los caracteres del segundo parámetro. Luego, 
-// //llamar la función pasándole como argumentos datos de 
-// //prueba y mostrar el resultado en la consola del navegador.
-
-// const busquedaProductoPorNombre = (productos, termino) => {
-//     return productos.filter(producto => producto.nombre.toLowerCase().includes(termino.toLowerCase()));
-// }
- 
-//  const productoEncontrado = busquedaProductoPorNombre(productos, "RING");
-//     console.log(productoEncontrado)
-
-
-// //cuarto punto
-// //Crear una función que ordene un array de productos por 
-// //precios de manera ascendente y descendente y retorne el 
-// //array resultante. Ejecutar la función y mostrar el 
-// //resultado en consola.
-
-// const ordenarProductosPorPrecio =(productos, orden) =>{
-//     const copiaProductos = [...productos];
-
-//     if (orden === "ascendente") {
-//         copiaProductos.sort((a, b) => a.precioUnitario - b.precioUnitario);   
-//     } else if (orden ==="descendente"){
-//         copiaProductos.sort((a, b) => b.precioUnitario - a.precioUnitario);
-
-//     } else {
-//         console.log("Error: El parámetro 'orden' debe ser 'ascendente' o 'descendente'");
-
-//     }
-
-//     return copiaProductos; 
-// }
-
-// // Llamar a la función para ordenar productos de manera ascendente
-// const productosAscendente = ordenarProductosPorPrecio(productos, "ascendente");
-// console.log("Productos ordenados de manera ascendente:", productosAscendente);
-
-// // Llamar a la función para ordenar productos de manera descendente
-// const productosDescendente = ordenarProductosPorPrecio(productos, "descendente");
-// console.log("Productos ordenados de manera descendente:", productosDescendente);
-
-
-// //Quinto punto
-// //Crear una función que calcule el total a pagar de una 
-// //compra, reciba como parámetros un array de productos 
-// //donde cada producto, tenga como propiedades la cantidad 
-// //y precio unitario del producto y devuelva el valor que 
-// //corresponda a la sumatoria de la cantidad por el precio 
-// //de cada producto. Ejecutar la función con datos de prueba y
-// //mostrar el resultado en la consola del navegador.
-
-// //prueba 1
-// const productosCompra = [
-//     {
-//         cantidad: 2,
-//         precioUnitario: 168.76,
-//     },
-//     {
-//         cantidad: 3,
-//         precioUnitario: 620.18,
-//     },
-//     {
-//         cantidad: 1,
-//         precioUnitario: 128.25,
-//     },
-// ]
-
-// const totalAPagar = (productos) => {
-//     const totalCompra = Number(productos.reduce((total, producto) => {
-//         return total + (producto.cantidad * producto.precioUnitario);
-//     }, 0));
-
-//     return totalCompra;
-// }
-
-// const totalPagar = totalAPagar(productosCompra);
-// console.log("Total a pagar:", totalPagar);
-
-
-
-//Entrega cuarto sprint
 
 const listarProductos = () => {
     const contenedor = document.getElementById("listaProductos")
@@ -822,43 +677,44 @@ const listarProductos = () => {
 listarProductos()
 
 
-
-
-
-
-
-
-
 // buscar producto por nombre
 
-const filtroPorNombre = document.getElementById("filtroPorNombre");
-
-const handlesearch = () => {
-    const busquedatermino = filtroPorNombre.value.toLowerCase();
-    const elementosFiltrados = productos.filter((item) => item.nombre.toLocaleLowerCase().startsWith(busquedatermino));
-
-//     resultadofiltro.innerHTML = `<div class="target1">
-//     <img
-//       src="${item.imagenes}"
-//       alt="${item.nombre}"
-//     />
-//     <h2>${item.nombre}</h2>
-//     <p> ${item.precioUnitario}</p>
-//   </div>`;
-
-    
+const nombreProducto = (productos, contenedor) => {
+    let contenido = "";
+   productos.forEach(item => {
+    contenido += `<div class="target1">
+    <img
+      src="${item.imagenes}"
+      alt="${item.nombre}"
+    />
+    <h2>${item.nombre}</h2>
+    <p> ${item.precioUnitario}</p>
+  </div>`;
+   });
+   
+   contenedor.innerHTML = contenido;
 };
+const listProductos = document.getElementById("listaProductos");
 
-filtroPorNombre.addEventListener("input", handlesearch);
+nombreProducto(productos, listProductos);
 
-// console.log(resultadofiltro)
+const filtroNombre = document.getElementById("filtroPorNombre");
 
+filtroNombre.addEventListener("input", (event) => {
+    const termino = event.target.value;
 
-    
+    const productosFiltrados = busquedaProductoPorNombre(productos, termino);
+    nombreProducto(productosFiltrados, listProductos);
+});
+const busquedaProductoPorNombre = (productos, termino) => {
+    return productos.filter(producto => producto.nombre.toLowerCase().includes(termino.toLowerCase()));
+  };
+  
+  
+
 // filtrar por categoria --BOTONES--
 
 //filtrar por todo
-
 
 const printProductos = (productos, contenedor) => {
     let almacenador = "";
@@ -966,13 +822,7 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
 
 
 
-
-
-
-
-
-
-  // Función para filtrar la ropa según la opción seleccionada
+  // Función para filtrar la joya según la opción seleccionada
   function filtrarPorPrecio() {
     const selector = document.getElementById("precioSelector");
     const opcionSeleccionada = selector.value;
@@ -985,14 +835,14 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
       case "menorAMayor":
         precioFiltrado = productos.sort((a, b) => a.precioUnitario - b.precioUnitario);
         break;
-      case "0-50":
-        precioFiltrado = productos.filter(item => item.precioUnitario < 50);
+      case "0-100":
+        precioFiltrado = productos.filter(item => item.precioUnitario < 100);
         break;
-      case "50-100":
-        precioFiltrado = productos.filter(item => item.precioUnitario >= 50 && item.precioUnitario <= 100);
+      case "100-300":
+        precioFiltrado = productos.filter(item => item.precioUnitario >= 100 && item.precioUnitario <= 300);
         break;
-      case "100-200":
-        precioFiltrado = productos.filter(item => item.precioUnitario > 100 && item.precioUnitario <= 200);
+      case "300-700":
+        precioFiltrado = productos.filter(item => item.precioUnitario > 300 && item.precioUnitario <= 700);
         break;
     }
     const contenedor = document.getElementById("listaProductos")
@@ -1002,12 +852,12 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
   }
   
   
-  // esto muestra los resultados en consola, si no hay ropa o no hay ropa del precio filtrado, entonces
+  // esto muestra los resultados en consola, si no hay joya o no hay joya del precio filtrado, entonces
   //muestra en consola que no hay
   function mostrarResultadosEnConsola(resultados) {
     if (resultados.length === 0) {
       console.log("No hay resultados para la opción seleccionada.");
-    } else {//en esta zona, por cada prenda de ropa encontrada de la opcion seleccionada, la imprime en consola
+    } else {//en esta zona, por cada joya encontrada de la opcion seleccionada, la imprime en consola
       resultados.forEach(item => {
         console.log(`${item.nombre}: $${item.precioUnitario}`);
       });
@@ -1017,3 +867,45 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
   // aca obtiene la id del selectior, "change" indica que al cambiar algo en el selector
   //se llama a la funcion de filtrado
   document.getElementById("precioSelector").addEventListener("change", filtrarPorPrecio);
+
+
+
+
+//mostrar descripcion del producto
+
+const descripcionProducto = (productos, contenedor) => {
+    let contenidos = "";
+   productos.forEach(item => {
+    contenidos += `<div class="target1">
+    <img
+      src="${item.imagenes}"
+      alt="${item.nombre}"
+    />
+    <h2>${item.nombre}</h2>
+    <p> ${item.precioUnitario}</p>
+  </div>`;
+   });
+   
+   contenedor.innerHTML = contenidos;
+};
+const productoDescripcion = document.getElementById("listaProductos");
+
+descripcionProducto(productos, productoDescripcion);
+
+productoDescripcion.addEventListener("click", (event) => {
+   const cartaProducto = event.target.closest(".target1");
+
+   if (cartaProducto) {
+    const articuloId =cartaProducto.dataset.target;
+    redirigirAlDetalle(articuloId);
+   }
+});
+
+function redirigirAlDetalle(id) {
+    window.location.href = `details.html?id=${id}`;
+    console.log(`Redirigir a la página de detalle del producto con ID: ${id}`);
+}
+
+
+
+
