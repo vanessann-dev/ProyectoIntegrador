@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/payment.css" />
+    <link rel="stylesheet" href="../css/modalCart.css">
     <title>Payment</title>
   </head>
 
@@ -12,16 +13,16 @@
       <section class="header-top">
         <h2 class="titulo-header">Darling</h2>
         <nav>
-          <button class="listacontenido">Home</button>
-          <button class="listacontenido">Shop</button>
-          <button class="listacontenido">Collections</button>
+          <a href="../Home/index.html"><button class="listacontenido">Home</button></a>
+          <a href="../pages/shop.html"><button class="listacontenido">Shop</button></a>
+          <a href="../pages/shop.html"><button class="listacontenido">Collections</button></a>
           <button class="listacontenido">About</button>
           <button class="listacontenido">Contact</button>
           <button class="listacontenido">
             <img src="../Assets/perfil.png" alt="icocno-perfil" />
           </button>
           <button class="listacontenido">
-            <img src="../Assets/carrito.png" alt="carro" />
+            <img  id="btnCart" src="../Assets/carrito.png" alt="carro" />
           </button>
         </nav>
       </section>
@@ -95,7 +96,7 @@
         <!--Payment Method-->
 
         <div class="contenedorPayment">
-          <h2>Payment Method</h2>
+          <!-- <h2>Payment Method</h2>
           <div class="txtChange">
             <p>Change payment methods</p>
           </div>
@@ -112,8 +113,7 @@
                 </div>
                 
           </div>
-
-
+          
           <p class="txtVS">Voucher</p>
 
           <div class="inputVoucher">
@@ -169,9 +169,49 @@
 
               </div>
 
-          </div>
-          <button class="estiloBtnPayment">Proceed to payment</button>
+          </div> -->
+
+          <h2>Formulario de Pago</h2>
+
+          <form class="estilo-contenedor">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        
+            <label for="nombre">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(+57)" required>
+        
+            <label for="nombre">Dirección de residencia:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
+        
+            <label for="correo">Correo Electrónico:</label>
+            <input class="estiloInput"  type="email" id="correo" name="correo" placeholder="Ingrese su  correo" required>
+        
+            <label for="nombreTarjeta">Propietario de la Tarjeta:</label>
+            <input class="estiloInput"  type="text" id="nombreTarjeta" name="nombreTarjeta" placeholder="Ingrese el nombre de tarjeta"  required>
+        
+            <label for="tipoBanco">Tipo Banco:</label>
+            <select class="estiloSelect"  type="select" id="tipoBanco" name="tipoBanco" required>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Amex">Amex</option>
+            </select>
+
+
+            <label for="numeroTarjeta">Número de la Tarjeta:</label>
+            <input class="estiloInput"  type="text" id="numeroTarjeta" name="numeroTarjeta"  placeholder="Ingrese su numero de tarjeta"  pattern="[0-9]{16}" required>
+       
+        
+            <label for="fechaCaducidad">Fecha de Caducidad:</label>
+            <input class="estiloInput"  type="text" id="fechaCaducidad" name="fechaCaducidad" placeholder="MM/AA"  pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+           
+        
+            <label for="cvv">CVV:</label>
+            <input class="estiloInput"type="text" id="cvv" name="cvv" placeholder="Ingrese clave de verificación" pattern="[0-9]{3,4}" required>
+           
+        </form>
+            <a href="../pages/compra-realizada.html"><button class="estiloBtnPayment">Proceed to payment</button></a>
         </div>
+      
       </section>
 
       <!--Sección You Make Also Like-->
@@ -253,5 +293,81 @@
         </div>
       </div>
     </footer>
+    <div class="modalCart hidden">
+      <section class="contenedorModal">
+        <div class="tituloCart">
+          <h2>Your cart</h2>
+          <button id="closeModal">
+            <img src="../Assets/remove.png" alt="Cerrar" />
+          </button>
+        </div>
+        <span>
+          <div class="contenedorCompras">
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Luxury Charms Ring pequeña.png"
+                  alt="Luxury Charms Ring pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Luxury Charms Ring</h3>
+                  <p>Code: 78205</p>
+                  <p>$620.73</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Exquisite Earrings pequeña.png"
+                  alt="Exquisite Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Exquisite Earrings</h3>
+                  <p>Code: 92701</p>
+                  <p>$125.28</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Delights Earrings pequeña.png"
+                  alt="Delights Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Delights Earrings</h3>
+                  <p>Code: 78201</p>
+                  <p>$327.71</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr class="linea"/>
+            <div class="contenedorTotal">
+              <div class="compraTotal">
+                <p>Total:</p>
+                <p>$621.75</p>
+              </div>
+              <button>Continue to check out</button>
+            </div>
+          </div>
+        </span>
+      </section>
+    </div>
+    <script src="../js/modalCart.js"></script>
   </body>
 </html>

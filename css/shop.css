@@ -153,7 +153,7 @@ header{
     color: #0D554A;
     /* margin-top: 5%; */
     font-family: "manrope";
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     height: 1.5rem;
     width: 10rem;
 }
@@ -176,9 +176,9 @@ header{
     background-color: transparent;
     font-family: "manrope";
     border: none;
-    font-size: 0.8rem;
     height: 3rem;
-    width: 6rem;
+    width: 8rem;
+    font-size: 14px;
 }
 
 .desplegable{
@@ -186,36 +186,62 @@ header{
     padding-top: 1rem;
 }
 
+#listaProductos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 4%; 
+}
+
+.contenedor-filtro select{
+    border: none;
+    background-color: transparent;
+}
+
+#listaProductos p{
+    font-family: "manrope";
+}
+
 .ptoductos-primer-linea{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    
 }
 
 .target1 img{
     max-width: 100%;
     border-top: 50px;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 380px;
+    width: 276px;
+
  }
 
 .target1{
     background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
-    margin-right: 2%;
+    margin-bottom: 3%;
  }
 
  .target1-ultima{
     background-color: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
+    height: 380px;
+    width: 276px;
  }
 
  .target1-ultima img{
     max-width: 100%;
     border-top: 50px;
     border-radius: 5px 5px 0px 0px;
- }
+    height: 380px;
+    width: 276px;
+}
+ 
 
  .ptoductos-primer-linea h2{
     font-family: "cormorant garamond";
@@ -225,6 +251,7 @@ header{
     Width:100%;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+   
 }
 
  .ptoductos-primer-linea p{

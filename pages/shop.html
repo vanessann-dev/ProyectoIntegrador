@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/modalCart.css">
     <title>Darling Jewelry</title>
   </head>
   <body>
@@ -17,14 +18,16 @@
           <a href="../pages/shop.html"
             ><button class="listacontenido1">Shop</button></a
           >
-          <button class="listacontenido1">Collections</button>
-          <button class="listacontenido1">About</button>
-          <button class="listacontenido1">Contact</button>
+          <a href="../pages/shop.html"
+            ><button class="listacontenido1">Collections</button></a
+          >
+          <a href=""><button class="listacontenido1">About</button></a>
+          <a href=""><button class="listacontenido1">Contact</button></a>
           <button class="listacontenido1">
             <img src="../Assets/iconoi perfil 1.png" alt="icocno-perfil" />
           </button>
           <button class="listacontenido1">
-            <img src="../Assets/carrito.png" alt="carrito" />
+            <img id="btnCart" src="../Assets/carrito.png" alt="carrito" />
           </button>
         </nav>
         <div class="menu-hamburger-shop">
@@ -35,6 +38,7 @@
         <h1 class="titulo1">Our Products</h1>
         <div class="busqueda">
           <input
+            id="filtroPorNombre"
             class="busqueda-texto"
             type="text"
             placeholder=" Find jewelry you like"
@@ -45,127 +49,131 @@
     <main>
       <section class="filtrar">
         <nav class="navegacion2">
-          <button class="listacontenido2">All</button>
-          <button class="listacontenido2">Rings</button>
-          <button class="listacontenido2">Bracelets</button>
-          <button class="listacontenido2">Necklaces</button>
-          <button class="listacontenido2">Earrings</button>
+          <button id="todo" class="listacontenido2">All</button>
+          <button id="anillo" class="listacontenido2">Rings</button>
+          <button id="brazalete" class="listacontenido2">Bracelets</button>
+          <button id="collar" class="listacontenido2">Necklaces</button>
+          <button id="arete" class="listacontenido2">Earrings</button>
         </nav>
         <div>
           <div class="contenedor-filtro">
-            <button class="filtro-precio">Sort by price</button>
-            <img
-              class="desplegable"
-              src="../Assets/flecha hacia abajo.png"
-              alt="desplegable"
-            />
+            <select id="precioSelector">
+              <option value="Sort By Price">Sort By Price</option>
+              <option value="mayorAMenor">De Mayor a Menor</option>
+              <option value="menorAMayor">De Menor a Mayor</option>
+              <option value="0-100">Menos de $100</option>
+              <option value="100-300">$100 - $300</option>
+              <option value="300-700">$300 - $700</option>
+            </select>
           </div>
         </div>
       </section>
-      <div class="ptoductos-primer-linea">
-        <div class="target1">
-          <img
-            src="../Assets/Luxury Gems Necklace.png"
-            alt="Luxury Gems Necklace"
-          />
-          <h2>Luxury Gems Necklace</h2>
-          <p>$168.76</p>
-        </div>
-        <div class="target1">
-          <img src="../Assets/Aurora Ring.png" alt="Aurora Ring" />
-          <h2>Aurora Ring</h2>
-          <p>$125.28</p>
-        </div>
-        <div class="target1">
-          <img
-            src="../Assets/Reflections Necklace.png"
-            alt="Reflections Necklace"
-          />
-          <h2>Reflections Necklace</h2>
-          <p>$620.73</p>
-        </div>
-        <div class="target1-ultima">
-          <img
-            src="../Assets/Dreamy Infinity Ring.png"
-            alt="Dreamy Infinity Ring"
-          />
-          <h2>Dreamy Infinity Ring</h2>
-          <p>$327.71</p>
-        </div>
-      </div>
-      <div class="ptoductos-segunda-linea">
-        <div class="target2">
-          <img
-            src="../Assets/Opulent Jewels Ring.png"
-            alt="Opulent Jewels Ring"
-          />
-          <h2>Opulent Jewels Ring</h2>
-          <p>$168.76</p>
-        </div>
-        <div class="target2">
-          <img
-            src="../Assets/Serene Solitaire Earrings.png"
-            alt="Serene Solitaire Earrings"
-          />
-          <h2>Serene Solitaire Earrings</h2>
-          <p>$125.28</p>
-        </div>
-        <div class="target2">
-          <img
-            src="../Assets/Timeless Halo Earrings.png"
-            alt="Timeless Halo Earrings"
-          />
-          <h2>Timeless Halo Earrings</h2>
-          <p>$620.73</p>
-        </div>
-        <div class="target2-ultima">
-          <img
-            src="../Assets/Exquisite Earrings.png"
-            alt="Exquisite Earrings"
-          />
-          <h2>Exquisite Earrings</h2>
-          <p>$327.71</p>
-        </div>
-      </div>
-      <div class="ptoductos-tercer-linea">
-        <div class="target3-img">
-          <img
-            src="../Assets/Timeless Elegance Ring.png"
-            alt="Timeless Elegance Ring"
-          />
-          <h3>Timeless Elegance Ring</h3>
-          <p>$168.76</p>
-        </div>
-        <div class="contenedor-target3">
-          <div class="target3">
+      <div id="listaProductos" class="contenedorImagenesJs">
+        <!-- <div id="todosLosProductos" class="ptoductos-primer-linea">
+          <div class="target1">
             <img
-              src="../Assets/Luxury Charms Ring.png"
-              alt="Luxury Charms Ring"
+              src="../Assets/Luxury Gems Necklace.png"
+              alt="Luxury Gems Necklace"
             />
-            <h2>Luxury Charms Ring</h2>
-            <p>$620.73</p>
+            <h2>Luxury Gems Necklace</h2>
+            <p>$168.76</p>
           </div>
-          <div class="target3-ultima">
-            <img src="../Assets/Sparkling Ring.png" alt="Sparkling Ring" />
-            <h2>Sparkling Ring</h2>
-            <p>$620.73</p>
+          <div class="target1">
+            <img src="../Assets/Aurora Ring.png" alt="Aurora Ring" />
+            <h2>Aurora Ring</h2>
+            <p>$125.28</p>
           </div>
-        </div>
-        <div>
-          <div class="target3">
+          <div class="target1">
             <img
-              src="../Assets/Blissful Bloom Ring.png"
-              alt="Blissful Bloom Ring"
+              src="../Assets/Reflections Necklace.png"
+              alt="Reflections Necklace"
             />
-            <h2>Blissful Bloom Ring</h2>
+            <h2>Reflections Necklace</h2>
             <p>$620.73</p>
           </div>
-          <div class="target3-ultima">
-            <img src="../Assets/Glimmering Ring.png" alt="Glimmering Ring" />
-            <h2>Glimmering Ring</h2>
-            <p>$620.73</p>
+          <div class="target1-ultima">
+            <img
+              src="../Assets/Dreamy Infinity Ring.png"
+              alt="Dreamy Infinity Ring"
+            />
+            <h2>Dreamy Infinity Ring</h2>
+            <p>$327.71</p>
           </div>
         </div>
+        <div class="ptoductos-segunda-linea">
+          <div class="target2">
+            <img
+              src="../Assets/Opulent Jewels Ring.png"
+              alt="Opulent Jewels Ring"
+            />
+            <h2>Opulent Jewels Ring</h2>
+            <p>$168.76</p>
+          </div>
+          <div class="target2">
+            <img
+              src="../Assets/Serene Solitaire Earrings.png"
+              alt="Serene Solitaire Earrings"
+            />
+            <h2>Serene Solitaire Earrings</h2>
+            <p>$125.28</p>
+          </div>
+          <div class="target2">
+            <img
+              src="../Assets/Timeless Halo Earrings.png"
+              alt="Timeless Halo Earrings"
+            />
+            <h2>Timeless Halo Earrings</h2>
+            <p>$620.73</p>
+          </div>
+          <div class="target2-ultima">
+            <img
+              src="../Assets/Exquisite Earrings.png"
+              alt="Exquisite Earrings"
+            />
+            <h2>Exquisite Earrings</h2>
+            <p>$327.71</p>
+          </div>
+        </div>
+        <div class="ptoductos-tercer-linea">
+          <div class="target3-img">
+            <img
+              src="../Assets/Timeless Elegance Ring.png"
+              alt="Timeless Elegance Ring"
+            />
+            <h3>Timeless Elegance Ring</h3>
+            <p>$168.76</p>
+          </div>
+          <div class="contenedor-target3">
+            <div class="target3">
+              <img
+                src="../Assets/Luxury Charms Ring.png"
+                alt="Luxury Charms Ring"
+              />
+              <h2>Luxury Charms Ring</h2>
+              <p>$620.73</p>
+            </div>
+            <div class="target3-ultima">
+              <img src="../Assets/Sparkling Ring.png" alt="Sparkling Ring" />
+              <h2>Sparkling Ring</h2>
+              <p>$620.73</p>
+            </div>
+          </div>
+          <div>
+            <div id="listaProductos2" class="target3">
+              <img
+                src="../Assets/Blissful Bloom Ring.png"
+                alt="Blissful Bloom Ring"
+              />
+              <h2>Blissful Bloom Ring</h2>
+              <p>$620.73</p>
+            </div>
+            <div id="listaProductos3" class="target3-ultima">
+              <img src="../Assets/Glimmering Ring.png" alt="Glimmering Ring" />
+              <h2>Glimmering Ring</h2>
+              <p>$620.73</p>
+            </div>
+          </div>
+        </div> -->
       </div>
       <section class="filtrar3">
         <nav class="navegacion3">
@@ -264,5 +272,82 @@
         </div>
       </div>
     </footer>
+    <div class="modalCart hidden">
+      <section class="contenedorModal">
+        <div class="tituloCart">
+          <h2>Your cart</h2>
+          <button id="closeModal">
+            <img src="../Assets/remove.png" alt="Cerrar" />
+          </button>
+        </div>
+        <span>
+          <div class="contenedorCompras">
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Luxury Charms Ring pequeña.png"
+                  alt="Luxury Charms Ring pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Luxury Charms Ring</h3>
+                  <p>Code: 78205</p>
+                  <p>$620.73</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Exquisite Earrings pequeña.png"
+                  alt="Exquisite Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Exquisite Earrings</h3>
+                  <p>Code: 92701</p>
+                  <p>$125.28</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr />
+            <div class="compras">
+              <div class="comprasDetalle">
+                <img
+                  src="../Assets/Delights Earrings pequeña.png"
+                  alt="Delights Earrings pequeña"
+                />
+                <div class="comprasDetalleDescri">
+                  <h3>Delights Earrings</h3>
+                  <p>Code: 78201</p>
+                  <p>$327.71</p>
+                </div>
+              </div>
+              <div>
+                <img src="../Assets/editar.png" alt="Editar" />
+                <p>x1</p>
+              </div>
+            </div>
+            <hr class="linea"/>
+            <div class="contenedorTotal">
+              <div class="compraTotal">
+                <p>Total:</p>
+                <p>$621.75</p>
+              </div>
+              <button>Continue to check out</button>
+            </div>
+          </div>
+        </span>
+      </section>
+    </div>
+    <script src="../js/productos.js"></script>
+    <script src="../js/modalCart.js"></script>
   </body>
 </html>
