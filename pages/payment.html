@@ -96,7 +96,7 @@
         <!--Payment Method-->
 
         <div class="contenedorPayment">
-          <h2>Payment Method</h2>
+          <!-- <h2>Payment Method</h2>
           <div class="txtChange">
             <p>Change payment methods</p>
           </div>
@@ -113,8 +113,7 @@
                 </div>
                 
           </div>
-
-
+          
           <p class="txtVS">Voucher</p>
 
           <div class="inputVoucher">
@@ -170,9 +169,49 @@
 
               </div>
 
-          </div>
-          <button class="estiloBtnPayment">Proceed to payment</button>
+          </div> -->
+
+          <h2>Formulario de Pago</h2>
+
+          <form class="estilo-contenedor">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        
+            <label for="nombre">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(+57)" required>
+        
+            <label for="nombre">Dirección de residencia:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
+        
+            <label for="correo">Correo Electrónico:</label>
+            <input class="estiloInput"  type="email" id="correo" name="correo" placeholder="Ingrese su  correo" required>
+        
+            <label for="nombreTarjeta">Propietario de la Tarjeta:</label>
+            <input class="estiloInput"  type="text" id="nombreTarjeta" name="nombreTarjeta" placeholder="Ingrese el nombre de tarjeta"  required>
+        
+            <label for="tipoBanco">Tipo Banco:</label>
+            <select class="estiloSelect"  type="select" id="tipoBanco" name="tipoBanco" required>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Amex">Amex</option>
+            </select>
+
+
+            <label for="numeroTarjeta">Número de la Tarjeta:</label>
+            <input class="estiloInput"  type="text" id="numeroTarjeta" name="numeroTarjeta"  placeholder="Ingrese su numero de tarjeta"  pattern="[0-9]{16}" required>
+       
+        
+            <label for="fechaCaducidad">Fecha de Caducidad:</label>
+            <input class="estiloInput"  type="text" id="fechaCaducidad" name="fechaCaducidad" placeholder="MM/AA"  pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+           
+        
+            <label for="cvv">CVV:</label>
+            <input class="estiloInput"type="text" id="cvv" name="cvv" placeholder="Ingrese clave de verificación" pattern="[0-9]{3,4}" required>
+           
+        </form>
+            <a href="../pages/compra-realizada.html"><button class="estiloBtnPayment">Proceed to payment</button></a>
         </div>
+      
       </section>
 
       <!--Sección You Make Also Like-->
