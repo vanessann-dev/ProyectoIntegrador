@@ -34,3 +34,21 @@ const obtenerDatosDelForm = (form) => {
   
     return emptyFields.length > 0 ? emptyFields : false;
   };
+
+  form.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+  
+    const newProduct = obtenerDatosDelForm(form);
+    const validation = validateDataForm(newProduct);
+    console.log(validation);
+    if (validation) {
+      alert(
+        "El formulario tiene los siguientes datos vacíos " + validation.toString()
+      );
+    } else {
+      agregarProducto(newProduct, productos);
+      insertarProductos(contenedorProductos, productos);
+      console.log(productos);
+      form.reset();
+    }
+  });
