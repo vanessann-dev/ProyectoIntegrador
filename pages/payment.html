@@ -173,7 +173,7 @@
 
           <h2>Formulario de Pago</h2>
 
-          <form class="estilo-contenedor">
+          <form id="formulario" class="estilo-contenedor" onsubmit="recibirForm(event)">
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
         
@@ -187,7 +187,7 @@
             <input class="estiloInput"  type="email" id="correo" name="correo" placeholder="Ingrese su  correo" required>
         
             <label for="nombreTarjeta">Propietario de la Tarjeta:</label>
-            <input class="estiloInput"  type="text" id="nombreTarjeta" name="nombreTarjeta" placeholder="Ingrese el nombre de tarjeta"  required>
+            <input class="estiloInput"  type="text" id="nombreTarjeta" name="Propietario" placeholder="Ingrese el nombre de tarjeta"  required>
         
             <label for="tipoBanco">Tipo Banco:</label>
             <select class="estiloSelect"  type="select" id="tipoBanco" name="tipoBanco" required>
@@ -207,9 +207,9 @@
         
             <label for="cvv">CVV:</label>
             <input class="estiloInput"type="text" id="cvv" name="cvv" placeholder="Ingrese clave de verificación" pattern="[0-9]{3,4}" required>
-           
+            <button  class="estiloBtnPayment" type="submit" id="enviarBtn">Proceed to payment</button>
         </form>
-            <a href="../pages/compra-realizada.html"><button class="estiloBtnPayment">Proceed to payment</button></a>
+            
         </div>
       
       </section>
@@ -368,6 +368,7 @@
         </span>
       </section>
     </div>
+    <script src="../js/formulario.js"></script>
     <script src="../js/modalCart.js"></script>
   </body>
 </html>
