@@ -12,3 +12,4 @@ const toggleModal = (button, modal) => {
 
 toggleModal(cartButton, modal);
 toggleModal(closeButton, modal);
+

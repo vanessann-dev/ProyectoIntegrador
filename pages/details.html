@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/details.css" />
+    <link rel="stylesheet" href="../css/details.css" />
     <link rel="stylesheet" href="../css/modalCart.css">
     <title>Details</title>
   </head>
@@ -13,7 +13,7 @@
       <section class="header-top">
         <h2 class="titulo-header">Darling</h2>
         <nav>
-          <a href="../Home/index.html"><button class="listacontenido">Home</button></a>
+          <a href="/index.html"><button class="listacontenido">Home</button></a>
           <a href="../pages/shop.html"><button class="listacontenido">Shop</button></a>
           <a href="../pages/shop.html"><button class="listacontenido">Collections</button></a>
           <button class="listacontenido">About</button>
@@ -31,27 +31,27 @@
     <main>
       <section class="estiloRuta">
         <article class="rutaNav">
-          <button>Home</button>
+          <a href="../Home/index.html"><button>Home</button></a>
           <img src="../Assets/flecha1.png" alt="flecha1" />
-          <button>Shop</button>
+          <a href="../pages/shop.html"><button>Shop</button></a>
           <img src="../Assets/flecha2.png" alt="flecha2" />
-          <button>Luxury Charms</button>
+          <button class="subMenuTitulo" >Luxury Charms</button>
         </article>
       </section>
 
-      <section class="contenedor-luxury">
+      <section id="detalleProducto" class="contenedor-luxury">
         <div class="contenedor-individual1">
           <div class="contenedor-img-peq">
-            <img src="../Assets/dimension1.png" alt="dimension1" />
-            <img src="../Assets/dimension2.png" alt="dimension2" />
-            <img src="../Assets/dimension3.png" alt="dimension3" />
-            <img class="conImg-5" src="../Assets/5.png" alt="dimension4" />
+            <img class="imgProducto" src="../Assets/dimension1.png" alt="dimension1" />
+            <img class="imgProducto"src="../Assets/dimension2.png" alt="dimension2" />
+            <img class="imgProducto" src="../Assets/dimension3.png" alt="dimension3" />
+            <img class="imgProducto" class="conImg-5" src="../Assets/5.png" alt="dimension4" />
           </div>
 
           <div class="contenedor-img-origin">
             <img class="corazon" src="../Assets/corazon.png" alt="corazon" />
             <img
-              class="img-luxx"
+              class="img-luxx imgProducto"
               src="../Assets/ring-luxury.png"
               alt="origin"
             />
@@ -77,12 +77,12 @@
 
         <div>
           <div class="caracteristicas">
-            <p class="subtitulosLux">Size - 48</p>
+            <p class="subtitulosLux">Size</p>
             <p class="questionSize">What is my size?</p>
           </div>
 
           <div class="contBotonTallas">
-            <button>48</button>
+            <!-- <button>48</button>
             <button>50</button>
             <button>52</button>
             <button>54</button>
@@ -93,20 +93,20 @@
             <button>64</button>
             <button>66</button>
             <button>68</button>
-            <button>70</button>
+            <button>70</button> -->
           </div>
-
+</div>
           <div class="contBotonQuantity">
             <p class="subtitulosLuxQ">Quantity</p>
-            <div>
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
+            <div id="contador">
+              <button id="restar">-</button>
+              <span id="numero"></span>
+              <button id="sumar">+</button>
             </div>
           </div>
 
           <div class="contBotonesBuy">
-            <button class="button estiloBotonAdd">
+            <button id="botonAgregarCompra" class="button estiloBotonAdd">
               <img
                 class="iconShop"
                 src="../Assets/shopping.png"
@@ -174,13 +174,13 @@
           </p>
         </div>
 
-        <div>
+        <div class="contenedorImgDescripcion">
           <img
             class="playBtn"
             src="../Assets/icon-video2.png"
             alt="boton play video"
           />
-          <img class="imgViD" src="../Assets/video_p2.png" alt="Description" />
+          <img class="imgViD imgProducto" src="../Assets/video_p2.png" alt="Description" />
         </div>
       </section>
 
@@ -420,5 +420,6 @@
       </section>
     </div>
     <script src="../js/modalCart.js"></script>
+    <script src="../js/details.js" type="module"></script>
   </body>
 </html>
