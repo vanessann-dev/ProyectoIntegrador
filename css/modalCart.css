@@ -2,7 +2,8 @@
     cursor: pointer;
 }
 
-.modalCart {    
+.modalCart {   
+    z-index: 9; 
     justify-content: flex-end;
     position: fixed;
     top: 0;

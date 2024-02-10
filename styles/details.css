@@ -175,7 +175,7 @@ nav{
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    /*width: 12%;*/
+    width: 80px;
     gap: 1rem;
 }
 
@@ -224,6 +224,8 @@ nav{
 .contBotonTallas{
     display: flex;
     gap: 0.4rem;
+    font-family: 'Manrope';
+    font-size: 1rem;
 
 }
 
@@ -376,17 +378,22 @@ nav{
 }
 
 .imgViD{
-    padding-left: 96px;
     padding-top: 4rem;
-    width: 1032px;
-    height: 581px;
-    /*padding-right: 6rem;*/
+    width: 801px;
+    height: 670px;
+    padding-bottom: 4rem
+}
+
+.contenedorImgDescripcion{
+    justify-content: center;
+    display: flex;
+
 }
 
 .playBtn{
     position: absolute;
-    margin-top: 16rem;
-    margin-left: 38rem;
+    margin-top: 19rem;
+    margin-left: -1rem;
 }
 
 /*Estilos Servicios*/
