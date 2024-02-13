@@ -216,6 +216,14 @@ nav{
     gap:1rem;
 }
 
+.seleccionado {
+    border: 2px solid black;
+}
+
+.seleccionada {
+    border: 2px solid black;
+}
+
 .caracteristicas{
     display: flex;
     justify-content: space-between;
@@ -237,7 +245,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     border-radius: 4px;
-    border: 1px solid #565E6C;
+    /* border: 1px solid #565E6C; */
     background: #FFF;
     color: #8F640C;
     font-family: Manrope;
@@ -246,6 +254,8 @@ nav{
     line-height: 22px; 
    
 }
+
+
 
 .contBotonQuantity{
     display: flex; 

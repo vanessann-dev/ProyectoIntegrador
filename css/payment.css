@@ -150,6 +150,12 @@ border-radius: 2px;
     line-height: 20px;
 }
 
+.imgCompra{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
 .conttDeli{
     display: flex;
     gap: 5rem;
@@ -189,6 +195,8 @@ border-radius: 2px;
     box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 }
 
+
+
 .cont-order-img{
     display: flex;
     margin-top: 1rem;
@@ -210,6 +218,7 @@ border-radius: 2px;
 }
 .propSummary{
     justify-content: center;
+    font-family: "manrope";
 }
 
 /*Payment Method*/
