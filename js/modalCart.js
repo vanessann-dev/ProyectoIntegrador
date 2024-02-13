@@ -21,20 +21,20 @@ const toggleModal = (button, modal) => {
                 const detalleCompra = document.createElement("div");
                 detalleCompra.classList.add("comprasDetalle");
                 const imagen = document.createElement("img");
-                imagen.src = producto.producto.imagenes; // Corregir aquí
-                imagen.alt = producto.producto.nombre; // Corregir aquí
+                imagen.src = producto.producto.imagenes;
+                imagen.alt = producto.producto.nombre;
                 imagen.classList.add("imagenProductoCompra");
                 detalleCompra.appendChild(imagen);
                 const detalleDescri = document.createElement("div");
                 detalleDescri.classList.add("comprasDetalleDescri");
                 const titulo = document.createElement("h3");
-                titulo.textContent = producto.producto.nombre; // Corregir aquí
+                titulo.textContent = producto.producto.nombre;
                 detalleDescri.appendChild(titulo);
                 const codigo = document.createElement("p");
-                codigo.innerHTML = `<p>Code: ${producto.producto.codigo}</p>`; // Corregir aquí
+                codigo.innerHTML = `<p>Code: ${producto.producto.codigo}</p>`;
                 detalleDescri.appendChild(codigo);
                 const precio = document.createElement("p");
-                precio.textContent = `$${producto.producto.precioUnitario}`; // Corregir aquí
+                precio.textContent = `$${producto.producto.precioUnitario}`;
                 detalleDescri.appendChild(precio);
                 detalleCompra.appendChild(detalleDescri);
                 compra.appendChild(detalleCompra);
@@ -52,20 +52,16 @@ const toggleModal = (button, modal) => {
         }
     });
 }
-
-
 toggleModal(cartButton, modal);
 toggleModal(closeButton, modal);
 
 
-
+//sumar el total de los prodcutos selelcionados en el carrito
 function sumarPreciosProductos() {
     let total = 0;
 
-    // Obtener los productos del carrito de la sesión
     const productosEnCarrito = JSON.parse(sessionStorage.getItem("productosEnCarrito")) || [];
 
-    // Iterar sobre cada producto y sumar sus precios
     productosEnCarrito.forEach(producto => {
         total += producto.producto.precioUnitario * producto.cantidad;
     });
@@ -73,6 +69,12 @@ function sumarPreciosProductos() {
     return total;
 }
 
-// Ejemplo de uso:
+function mostrarTotalCompra(total) {
+    const elementoTotal = document.getElementById("totalPrecio");
+    if (elementoTotal) {
+        elementoTotal.textContent = "$" + total.toFixed(2); // Formatear el total como moneda
+    }
+}
+
 const totalPrecios = sumarPreciosProductos();
-console.log("El total de los precios de los productos es:", totalPrecios);
+mostrarTotalCompra(totalPrecios);
