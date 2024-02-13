@@ -49,6 +49,11 @@
     height: 2rem;
 }
 
+.imagenProductoCompra{
+    width: 80px;
+    height: 80px;
+}
+
 .contenedorCompras {
     margin: 27px 35px 15px 35px;
 }
