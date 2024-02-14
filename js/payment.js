@@ -78,7 +78,7 @@ const recibirForm = async(e) => {
 
     const nuevaCompra = await fetch("http://localhost:3000/ordenesCompra", {
       method:"POST",
-      body:JSON.stringify(compra,),
+      body:JSON.stringify(compra),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       }
