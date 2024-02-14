@@ -192,3 +192,26 @@ function agregarProductoAlCarrito(productoSeleccionado) {
     
     alert("Producto agregado al carrito");
 }
+
+function sumarPreciosProductos() {
+    let total = 0;
+
+    const productosEnCarrito = JSON.parse(sessionStorage.getItem("productosEnCarrito")) || [];
+
+    productosEnCarrito.forEach(producto => {
+        total += producto.producto.precioUnitario * producto.cantidad;
+    });
+
+    return total;
+}
+
+function mostrarTotalCompra(total) {
+    const elementoTotal = document.getElementById("totalPrecio");
+    if (elementoTotal) {
+        elementoTotal.textContent = "$" + total.toFixed(2); // Formatear el total como moneda
+    }
+}
+
+const totalPrecios = sumarPreciosProductos();
+mostrarTotalCompra(totalPrecios);
+
