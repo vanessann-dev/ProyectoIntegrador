@@ -53,7 +53,7 @@ Feel free to explore our collection and find the perfect jewelry piece for any o
 
 If you have questions or problems, please do not hesitate to contact us at
 💌
-lina.naranjo@gmail.com
+lina.naja1807@gmail.com
 💌
 vanessapulido100@gmail.com
 
