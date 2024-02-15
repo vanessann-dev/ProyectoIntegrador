@@ -1,3 +1,6 @@
+//peticion get productos del json server
+
+
 import { productos } from "../modules/articulos.js";
 
 //Entrega sprint 4

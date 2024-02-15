@@ -113,6 +113,10 @@ header{
     color: #9095A0;
 }
 
+.imagenCompra{
+    width: 6rem;
+}
+
 .contenedor-principal6 {
     display: flex;
     flex-direction: column;
