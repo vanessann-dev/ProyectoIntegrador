@@ -13,7 +13,7 @@
       <section class="header-top">
         <h2 class="titulo-header">Darling</h2>
         <nav>
-          <a href="/index.html"><button class="listacontenido">Home</button></a>
+          <a href="../index.html"><button class="listacontenido">Home</button></a>
           <a href="../pages/shop.html"><button class="listacontenido">Shop</button></a>
           <a href="../pages/shop.html"><button class="listacontenido">Collections</button></a>
           <button class="listacontenido">About</button>
@@ -31,7 +31,8 @@
     <main>
       <section class="estiloRuta">
         <article class="rutaNav">
-          <a href="../Home/index.html"><button>Home</button></a>
+
+          <a href="../index.html"><button>Home</button></a>
           <img src="../Assets/flecha1.png" alt="flecha1" />
           <a href="../pages/shop.html"><button>Shop</button></a>
           <img src="../Assets/flecha2.png" alt="flecha2" />
@@ -66,18 +67,18 @@
 
           <div class="caracProductoImg">
             <div>
-              <img src="../Assets/oval1.png" alt="color1 del producto" />
+              <img src="../Assets/oval1.png" alt="color1 del producto" class="color" data-color="plata"/>
             </div>
 
             <div>
-              <img src="../Assets/oval2.png" alt="color2 del producto" />
+              <img src="../Assets/oval2.png" alt="color2 del producto" class="color" data-color="dorado"/>
             </div>
           </div>
         
 
         <div>
           <div class="caracteristicas">
-            <p class="subtitulosLux">Size</p>
+            <p class="subtitulosLux"></p>
             <p class="questionSize">What is my size?</p>
           </div>
 
@@ -115,7 +116,7 @@
             </button>
 
             <div>
-              <button class="button estiloBotonBuy">Buy now</button>
+              <a href="../pages/payment.html"><button class="button estiloBotonBuy">Buy now</button></a>
             </div>
           </div>
 
@@ -407,16 +408,16 @@
                 <p>x1</p>
               </div>
             </div>
-            <hr class="linea"/>
+          </div>
+        </span>
+        <hr class="linea"/>
             <div class="contenedorTotal">
               <div class="compraTotal">
                 <p>Total:</p>
-                <p>$621.75</p>
+                <p id="totalPrecio">$621.75</p>
               </div>
-              <button>Continue to check out</button>
+              <a href="../pages/payment.html"><button>Continue to check out</button></a>
             </div>
-          </div>
-        </span>
       </section>
     </div>
     <script src="../js/modalCart.js"></script>

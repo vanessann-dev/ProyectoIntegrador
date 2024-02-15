@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/shop.css" />
-    <link rel="stylesheet" href="../css/modalCart.css">
+    <link rel="stylesheet" href="../css/modalCart.css" />
     <title>Darling Jewelry</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <section class="header-top1">
         <h2 class="titulo-header">Darling</h2>
         <nav class="navegacion1">
-          <a href="/index.html"
+          <a href="../index.html"
             ><button class="listacontenido1">Home</button></a
           >
           <a href="../pages/shop.html"
@@ -273,7 +273,7 @@
       </div>
     </footer>
     <div class="modalCart hidden">
-      <section class="contenedorModal">
+      <div class="contenedorModal">
         <div class="tituloCart">
           <h2>Your cart</h2>
           <button id="closeModal">
@@ -281,73 +281,77 @@
           </button>
         </div>
         <span>
-          <div id="compras" class="contenedorCompras">
-            <div class="compras">
-              <div class="comprasDetalle">
-                <img
-                  src="../Assets/Luxury Charms Ring pequeña.png"
-                  alt="Luxury Charms Ring pequeña"
-                />
-                <div class="comprasDetalleDescri">
-                  <h3>Luxury Charms Ring</h3>
-                  <p>Code: 78205</p>
-                  <p>$620.73</p>
+          <div id="compras" class="contenedorPCompras">
+            <div class="contenedorCompras">
+              <div class="compras">
+                <div class="comprasDetalle">
+                  <img
+                    class="imgCompra1"
+                    src="../Assets/Luxury Charms Ring pequeña.png"
+                    alt="Luxury Charms Ring pequeña"
+                  />
+                  <div class="comprasDetalleDescri">
+                    <h3 class="tituloCompra">Luxury Charms Ring</h3>
+                    <p class="codigoCompra">Code: 78205</p>
+                    <p class="precioCompra">$620.73</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="../Assets/editar.png" alt="Editar" />
+                  <p>x1</p>
                 </div>
               </div>
-              <div>
-                <img src="../Assets/editar.png" alt="Editar" />
-                <p>x1</p>
-              </div>
-            </div>
-            <hr />
-            <div class="compras">
-              <div class="comprasDetalle">
-                <img
-                  src="../Assets/Exquisite Earrings pequeña.png"
-                  alt="Exquisite Earrings pequeña"
-                />
-                <div class="comprasDetalleDescri">
-                  <h3>Exquisite Earrings</h3>
-                  <p>Code: 92701</p>
-                  <p>$125.28</p>
+              <hr />
+              <div class="compras">
+                <div class="comprasDetalle">
+                  <img
+                    src="../Assets/Exquisite Earrings pequeña.png"
+                    alt="Exquisite Earrings pequeña"
+                  />
+                  <div class="comprasDetalleDescri">
+                    <h3>Exquisite Earrings</h3>
+                    <p>Code: 92701</p>
+                    <p>$125.28</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="../Assets/editar.png" alt="Editar" />
+                  <p>x1</p>
                 </div>
               </div>
-              <div>
-                <img src="../Assets/editar.png" alt="Editar" />
-                <p>x1</p>
-              </div>
-            </div>
-            <hr />
-            <div class="compras">
-              <div class="comprasDetalle">
-                <img
-                  src="../Assets/Delights Earrings pequeña.png"
-                  alt="Delights Earrings pequeña"
-                />
-                <div class="comprasDetalleDescri">
-                  <h3>Delights Earrings</h3>
-                  <p>Code: 78201</p>
-                  <p>$327.71</p>
+              <hr />
+              <div class="compras">
+                <div class="comprasDetalle">
+                  <img
+                    src="../Assets/Delights Earrings pequeña.png"
+                    alt="Delights Earrings pequeña"
+                  />
+                  <div class="comprasDetalleDescri">
+                    <h3>Delights Earrings</h3>
+                    <p>Code: 78201</p>
+                    <p>$327.71</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="../Assets/editar.png" alt="Editar" />
+                  <p>x1</p>
                 </div>
               </div>
-              <div>
-                <img src="../Assets/editar.png" alt="Editar" />
-                <p>x1</p>
-              </div>
-            </div>
-            <hr class="linea"/>
-            <div class="contenedorTotal">
-              <div class="compraTotal">
-                <p>Total:</p>
-                <p>$621.75</p>
-              </div>
-              <button>Continue to check out</button>
             </div>
           </div>
         </span>
-      </section>
+        <hr class="linea" />
+        <div class="contenedorTotal">
+          <div class="compraTotal">
+            <p>Total:</p>
+            <p id="totalPrecio">$621.75</p>
+          </div>
+          <a href="../pages/payment.html"><button>Continue to check out</button></a>
+        </div>
+      </div>
     </div>
     <script src="../js/productos.js" type="module"></script>
     <script src="../js/modalCart.js"></script>
+    <script src="../js/details.js" type="module"></script>
   </body>
 </html>

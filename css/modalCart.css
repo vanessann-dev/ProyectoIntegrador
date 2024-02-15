@@ -49,6 +49,11 @@
     height: 2rem;
 }
 
+.imagenProductoCompra{
+    width: 80px;
+    height: 80px;
+}
+
 .contenedorCompras {
     margin: 27px 35px 15px 35px;
 }
@@ -59,6 +64,7 @@
     align-items: center;
     padding-bottom: 0.7rem;
     padding-top: 0.8rem;
+    /* width: 30rem; */
 }
 
 .comprasDetalle{
@@ -82,9 +88,9 @@
     font-size: 0.7rem;
 }
 
-.linea{
+/* .linea{
     margin-top: 6rem;
-}
+} */
 
 .contenedorTotal button{
     font-family: "Manrope";
@@ -111,4 +117,8 @@
     font-size: 1.5rem;
     padding-bottom: 1.2rem;
     padding-top: 1.2rem;
+}
+#totalPrecio{
+    font-family: "manrope";
+    font-size: 1.2rem;
 }

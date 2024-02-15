@@ -1,3 +1,6 @@
+//peticion get productos del json server
+
+
 import { productos } from "../modules/articulos.js";
 
 //Entrega sprint 4
@@ -214,42 +217,7 @@ const filtrarProductoBrazelate1 = (productos, tipoDeAccesorio) => {
 
 
 
-
 //mostrar descripcion del producto
-
-// const descripcionProducto = (productos, contenedor) => {
-//     let contenidos = "";
-//    productos.forEach(item => {
-//     contenidos += `<div class="target1">
-//     <img
-//       src="${item.imagenes}"
-//       alt="${item.nombre}"
-//     />
-//     <h2>${item.nombre}</h2>
-//     <p> ${item.precioUnitario}</p>
-//   </div>`;
-//    });
-   
-//    contenedor.innerHTML = contenidos;
-// };
-// const productoDescripcion = document.getElementById("listaProductos");
-
-// descripcionProducto(productos, productoDescripcion);
-
-// productoDescripcion.addEventListener("click", (event) => {
-//    const cartaProducto = event.target.closest(".target1");
-
-//    if (cartaProducto) {
-//     const articuloId =cartaProducto.dataset.target;
-//     redirigirAlDetalle(articuloId);
-//    }
-// });
-
-// function redirigirAlDetalle(id) {
-//     location.href = `details.html?id=${id}`;
-//     console.log(`Redirigir a la página de detalle del producto con ID: ${id}`);
-// }
-
 
 const descripcionProducto = (productos, contenedor) => {
     let contenidos = "";
