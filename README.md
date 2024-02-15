@@ -1,20 +1,35 @@
-##Darling Jewelery
+# Darling Jewelry 💎
 
-Is a website designed for the purchase of women's  jewelry accessories such as: rings, bracelets, necklaces, earrings, among others.
-:heart:  !Quality jewelry and exclusive collections full of vanity and love! :heart:
+Welcome to Darling Jewelry, a website designed for the purchase of women's jewelry accessories. Explore our exclusive collections featuring high-quality jewelry, crafted with love and elegance! :heart:
 
-###Main Features
-- There is a variety of products which can be filtered by categories depending on the accessory you want to see.
-- Accessories filters can be made by category, name, or by price depending on your preference. They can be done through a search engine or through a drop-down list that provides these options.
-- You enter each product by selecting the image to view its characteristics: name, code, price, color, quantity, and size depending on the selected accessory.
-- You must choose the characteristics of the product according to the purchase criteria to later add it to the shopping cart.
-- If you did not choose any product, the shopping cart comes out empty.
+## Main Features 
 
-<p align="center">
-[![R.png](https://i.postimg.cc/tghsXTJb/R.png)](https://postimg.cc/p9LWCPKc)
+💍 **Variety of Products:** Explore a diverse range of jewelry accessories, including rings, bracelets, necklaces, earrings, and more.
 
-###Technologies used in the development of the project
-:computer:
+💍 **Easy Filtering:** Use our user-friendly filtering options to find the perfect accessory. Filter by category, name, or price using the search engine or a convenient drop-down list.
+
+💍 **Detailed Product Information:** Click on an image to view detailed information about each product, including name, code, price, color, quantity, and size.
+
+💍 **Simple Shopping:** Choose the characteristics of the product based on your preferences and add it to your shopping cart. The shopping cart will display your selected items.
+
+💍 **Empty Cart Handling:** If you haven't selected any products, the shopping cart will be empty.
+
+Feel free to explore our collection and find the perfect jewelry piece for any occasion! :gem:
+
+## Getting Started 
+
+1. **Clone the Repository:**
+   git clone (https://github.com/vanessann-dev/ProyectoIntegrador.git)
+
+3. **Install Dependencies:**
+   cd ProyectoIntegrador
+   npm install
+
+3. **Run the Application:**
+   npm start
+   
+
+## Technologies Used in the development of the project
 
 [![k.png](https://i.postimg.cc/LsKj2GHc/k.png)](https://postimg.cc/CR7R4Pn7)
 
@@ -30,20 +45,22 @@ Is a website designed for the purchase of women's  jewelry accessories such as: 
 
 ## Contribution Guide
 
-- Create a branch for your feature or fix: `git checkout -b branch-name`
-- Make your changes and commit: `git commit -m "Description of changes"`
-- Submit a pull request from your branch to the main branch.
+💍 Create a branch for your feature or fix: `git checkout -b branch-name`
+💍 Make your changes and commit: `git commit -m "Description of changes"`
+💍 Submit a pull request from your branch to the main branch.
 
 ## Contact
 
 If you have questions or problems, please do not hesitate to contact us at
-:cart:
+💌
 lina.naranjo@gmail.com
+💌
 vanessapulido100@gmail.com
 
-##Gratitude
+## Gratitude
 Thank you for your time, do not hesitate to contact us
 
-##Authors
+## Authors 
+By
 Lina Naranjo & Vanessa Sánchez
 Bootcamp Cohorte 7 Makaia :heart:
